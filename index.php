@@ -13,7 +13,7 @@
             <img alt="Hannah Sheridan circ- 2020" 
                  src="images/hannah-sheridan.jpg" 
                  style="max-width: 100%;">
-            <figcaption>Heading off to my first Computer class.</figcaption>
+            <figcaption>Me during my junior year of High School.</figcaption>
         </figure>
 
         <h1>CS 008-<em>B</em> Spring 2022</h1>
