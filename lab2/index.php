@@ -3,7 +3,7 @@
     <head>
         <!-- meta tags and title -->
         <meta charset = "utf-8">
-        <title>Trees and the Environment</title>
+        <title>Plant Trees</title>
         <meta name = "author" content = "Hannah Sheridan">
 
         <!-- description: about trees, deforestation, and how planting can save the environment -->
@@ -18,7 +18,7 @@
             <h1>Plant More Trees.</h1>
             <!-- I wasnt sure if we were allowed to use CSS, so I left my photos unformatted -->
             <figure>
-                <img src = "images/planting-tree.jpg" alt = "Planting a Tree" width = "20%">
+                <img src = "images/planting-tree.jpg" alt = "Planting a Tree" width = "300">
                 <figcaption>Plant a Tree [photo: Greener Land]</figcaption>
             </figure>
           
@@ -29,7 +29,7 @@
                 can be done by chopping or burning down large plots of land. Deforestation is often used to make space for animals, agriculture, or new construction. People also deforest to gather wood for fuel or building materials.
                 As a result, we lose around 80,000 acres of tropical rainforest every single day (<em>approximately 27 football fields per minute</em>).</p>
                 <figure >
-                    <img src = "images/deforestation.jpg" alt = "Deforestation" width = "20%">
+                    <img src = "images/deforestation.jpg" alt = "Deforestation" width = "300">
                     <figcaption>Slash and Burn Deforestation [photo: Getty Images]</figcaption>
                 </figure>
                     <!-- table with deforestation timeline -->
@@ -68,7 +68,6 @@
                             target = "_blank">https://www.timetoast.com/timelines/deforestation-16f20047-819b-49db-a0f4-d258bbacb3c3</a></cite></td>
                         </tr>
                     </table>
-                </section>
             </section>
 
             <!-- Header about the effects of deforestation -->
@@ -93,30 +92,40 @@
             <!-- Header and list about how trees can help the environment -->
             <section>
                 <figure>
-                    <img src = "images/forest.jpg" alt = "Forest of Trees" width = "20%">
+                    <img src = "images/forest.jpg" alt = "Forest of Trees" width = "300">
                     <figcaption>Lush Forest [photo: infoguides]</figcaption>
                 </figure>
                 <h2>How Trees Help our Earth</h2>
                 <ul>
-                    <li><strong>Trees provide oxygen</strong></li>
-                        <p>Trees take in carbon dioxide to create oxygen for us to breathe, reducing CO2 levels in the process. While the ocean provides most of the earth's oxygen, rainforests account for around 28% of the earth's oxygen.</p>
-                    <li><strong>Trees provide habitats for animals</strong></li>
-                        <p>Trees give a variety of animals and insects shelter and food. Trees improve the ecostystem; wildlife often choose to be in areas with a good amount of trees.</p>
-                    <li><strong>Trees reduce erosion and flooding</strong></li>
-                        <p>A Tree's leaves catches rain as it falls, lessening the amount of water that reaches the ground and reducing flooding. Trees also have large roots that absorb water and hold soil in place, reducing erosion.</p>
-                    <li><strong>Trees decrease air pollutants</strong></li>
-                        <p>Trees trap air pollutants in their leaves, filtering our air and making it easier for us to breathe.</p>
-                    <li><strong>Trees lower temperatures</strong></li>
-                        <p>When trees evaporate water, it cools the area around them. This tempers the climate and reduces humidity.</p>
+                    <li><strong>Trees provide oxygen</strong>
+                        <ul>
+                            <li>Trees take in carbon dioxide to create oxygen for us to breathe, reducing CO2 levels in the process. While the ocean provides most of the earth's oxygen, rainforests account for around 28% of the earth's oxygen.</li>
+                        </ul></li>
+                    <li><strong>Trees provide habitats for animals</strong>
+                        <ul>
+                            <li>Trees give a variety of animals and insects shelter and food. Trees improve the ecostystem; wildlife often choose to be in areas with a good amount of trees.</li>
+                        </ul></li>
+                    <li><strong>Trees reduce erosion and flooding</strong>
+                        <ul>
+                            <li>A Tree's leaves catches rain as it falls, lessening the amount of water that reaches the ground and reducing flooding. Trees also have large roots that absorb water and hold soil in place, reducing erosion.</li>
+                        </ul></li>
+                    <li><strong>Trees decrease air pollutants</strong>
+                        <ul>
+                            <li>Trees trap air pollutants in their leaves, filtering our air and making it easier for us to breathe.</li>
+                        </ul></li>
+                    <li><strong>Trees lower temperatures</strong>
+                        <ul>
+                            <li>When trees evaporate water, it cools the area around them. This tempers the climate and reduces humidity.</li>
+                        </ul></li>
                     <li>Sources: <cite><a href = "http://www.nitrofill.com/TreeHelp.aspx" target = "_blank">http://www.nitrofill.com/TreeHelp.aspx</a></cite>
                     <cite><a href = "https://www.nwf.org/Trees-for-Wildlife/About/Trees-Make-a-Difference" target = "_blank">https://www.nwf.org/Trees-for-Wildlife/About/Trees-Make-a-Difference</a></cite></li>
                 </ul>
             </section>
             <!-- Section for other sources used -->
-            <section>
-                <p><strong>Other sources used: </strong><cite><a href = "https://www.nationalgeographic.org/encyclopedia/deforestation/#:~:text=Deforestation%20is%20the%20purposeful%20clearing%20of%20forested%20land.&text=About%202%2C000%20years%20ago%2C%2080,1870s%20for%20timber%20and%20agriculture" target = "_blank">National Geographic</a></cite>
-                <cite><a href = "https://www.scientificamerican.com/article/earth-talks-daily-destruction/#:~:text=Pinning%20down%20exact%20numbers%20is,day%20on%20top%20of%20that.">Scientific American</a></cite></p>
-            </section>
+            <p>Other Sources Used: 
+                <cite><a href = "https://www.nationalgeographic.org/encyclopedia/deforestation/#:~:text=Deforestation%20is%20the%20purposeful%20clearing%20of%20forested%20land.&text=About%202%2C000%20years%20ago%2C%2080,1870s%20for%20timber%20and%20agriculture" target = "_blank">National Geographic</a></cite>
+                <cite><a href = "https://www.scientificamerican.com/article/earth-talks-daily-destruction/#:~:text=Pinning%20down%20exact%20numbers%20is,day%20on%20top%20of%20that.">Scientific American</a></cite>
+            </p>
         </main>
     </body>
 </html>
