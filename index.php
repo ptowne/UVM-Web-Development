@@ -19,6 +19,30 @@
         <h1>CS 008-<em>B</em> Spring 2022</h1>
         <h2>Hannah Sheridan - Site map</h2>
         <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
+<!-- Section: Lab Three -->
+        <section class = "grid-layout">
+            <h2 class = "header">Lab Three - Adding Detail and a Form</h2>
+        <!-- Public files -->
+            <section class = "public-files">
+                <h3>Public Files</h3>
+                <p><a href = "lab3/detail.php">detail.php</a></p>
+                <p><a href = "lab3/form.php">form.php</a></p>
+                <p><a href = "lab3/index.php">index.php</a></p>
+                <p></p>
+            </section>
+        <!-- Supporting files -->
+            <section class = "supporting-files">
+                <h3>Supporting Files</h3>
+                <p><a href = "lab3/css/custom.css">custom.css</a></p>
+                <p><a href = "lab3/wireframe.png">wireframe.png</a></p>
+                <p></p>
+            </section>
+        <!-- Notes to grader -->
+            <section class = "grader-notes">
+                <h3>Notes to Grader</h3>
+                <p></p>
+            </section>
+
 <!-- Section: Lab Two -->
         <section class = "grid-layout">
             <h2 class = "header">Lab Two - Making the World a Better Place</h2>
