@@ -5,14 +5,43 @@
         <title>Hannah's CS008 Index</title>
         <meta name="author" content="Hannah Sheridan">
         <meta name="description" content="A site map to my CS008 assignments for the 2022 Spring Semester.">
+
+        <style>
+            /* Basic CSS */
+            body {
+                margin: auto;
+                padding: 3%;
+                width: 90%;
+            }
+            figure {
+                border: thin solid darkslategray;
+                border-radius: 3%;
+                padding: 3%;
+                text-align: center;
+            }
+            figcaption {
+                color: #839e99;
+                font-style: italic;
+                text-align: center;
+            }
+            img {
+                border-radius: 3%;
+                max-width: 100%;
+            }
+            .right {
+                float: right;
+                margin-left: 3%;
+            }
+            .small {
+                width: 20%
+            }
+        </style>
     </head>
 
     <body>
-        <figure style="float: left; text-align: center; width: 20%;">
-
+        <figure class = "right small">
             <img alt="Hannah Sheridan circ- 2020" 
-                 src="images/hannah-sheridan.jpg" 
-                 style="max-width: 100%;">
+                 src="images/hannah-sheridan.jpg">
             <figcaption>Me during my junior year of High School.</figcaption>
         </figure>
 
@@ -42,6 +71,7 @@
                 <h3>Notes to Grader</h3>
                 <p></p>
             </section>
+        </section>
 
 <!-- Section: Lab Two -->
         <section class = "grid-layout">
