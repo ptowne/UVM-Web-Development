@@ -1,1 +1,44 @@
+/* constants here */
+:root {
+    --main-background-color: rgb(0,104,102);
+    --main-text-color: rgb(0,0,0);
+    --main-background-image: url(../images/tree.jpg);
+    --main-font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+}
+html{
+    background-image: var(--main-background-image);
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    font-family: var(--main-font-family);
+    margin: 25px 25px 25px 25px;
+    padding: 25px 25px 25px 25px;
+}
+figure{
+    float: right;
+    text-align: center;
+    width: 20%;
+}
 
+img{
+    max-width: 100%;
+}
+header h1{
+    text-align: center;
+    color: darkgreen;
+}
+header h2{
+    text-align:center;
+}
+nav a{
+    background-color: lightblue;
+}
+a:hover{
+    background-color: blue;
+}
+h1 {
+    text-transform: uppercase;
+}
+p{
+    text-indent: 20px;
+    text-align: left;
+}
