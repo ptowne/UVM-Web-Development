@@ -10,7 +10,7 @@
     <meta name="description" content="Around 80,000 acres of tropical rainforest are cut down every day. Deforestation has ridden our planet and is
         killing one of the earth's most helpful and beautiful plants: trees. It is uncertain whether this deforestation will ever end, but we can ease its
         damaging effects by planting more trees.">
-    <link rel="stylesheet" href="css/cusstom.css?version=<?php print time(); ?>" type="text/css">
+    <link rel="stylesheet" href="css/custom.css?version=<?php print time();?>" type="text/css">
 </head>
 
 <body class="if-needed">
@@ -27,8 +27,7 @@
     <main>
         <figure class = "deforestation">
             <img src="images/deforestation.jpg" alt="Deforestation" width="300" class = "deforestation">
-            <figcaption>Slash and Burn Deforestation [photo: Getty Images]</figcaption>
-            <cite>Getty Images</cite>
+            <figcaption>Slash and Burn Deforestation [photo: Getty Images] <cite>Getty Images</cite></figcaption>
         </figure>
         <section class="what-is">
             <!-- Header to talk about the history of the forests -->
@@ -123,8 +122,7 @@
         <!-- Header and list about how trees can help the environment -->
         <figure class = "forest">
             <img src="images/forest.jpg" alt="Forest of Trees" width="300" class = "forest">
-            <figcaption>Lush Forest [photo: infoguides]</figcaption>
-            <cite>infoguides</cite>
+            <figcaption>Lush Forest [photo: infoguides] <cite>infoguides</cite></figcaption>
         </figure>
         <section class="why-trees">
             <h2>How Trees Help our Earth</h2>
