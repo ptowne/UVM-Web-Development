@@ -10,10 +10,10 @@
     <meta name="description" content="Around 80,000 acres of tropical rainforest are cut down every day. Deforestation has ridden our planet and is
         killing one of the earth's most helpful and beautiful plants: trees. It is uncertain whether this deforestation will ever end, but we can ease its
         damaging effects by planting more trees.">
-    <link rel="stylesheet" href="css/cusstom.css?version=<?php print time(); ?>" type="text/css">
+    <link rel="stylesheet" href="css/custom.css?version=<?php print time(); ?>" type="text/css">
 </head>
 
-<body class="if-needed">
+<body class="form">
     <header>
         <!-- main header: plant more trees -->
         <h1>Plant More Trees</h1>
@@ -32,9 +32,8 @@
             print '</pre>';
             ?>
         <figure class = "forest">
-            <img href = "images/planting-tree.jpg" class = "forest" alt = "Planting A Tree"> 
-            <figcaption>Tree in Your Hands [photo: Getty Images]</figcaption>
-            <cite>Getty Images</cite>
+            <img src = "images/planting-tree.jpg" class = "forest" alt = "Planting A Tree"> 
+            <figcaption>Tree in Your Hands [photo: Getty Images] <cite>Getty Images</cite></figcaption>
         </figure>
         <form action="#" method="POST">
             <!-- text boxes -->
