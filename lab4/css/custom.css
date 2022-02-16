@@ -17,10 +17,16 @@ figure{
     float: right;
     text-align: center;
     width: 20%;
+    border-radius: 3px;
+    border: thin solid darkgreen;
 }
-
+figcaption{
+    text-align: center;
+}
 img{
     max-width: 100%;
+    border-radius: 3px;
+    float: center;
 }
 header h1{
     text-align: center;
@@ -41,4 +47,20 @@ h1 {
 p{
     text-indent: 20px;
     text-align: left;
+}
+.planting-tree{
+    width: 100;
+    float: right;
+    text-align: center;
+    font-size: xsmall;
+}
+cite {
+    font-size: xxsmall;
+}
+.forest{
+    border-radius: 3%;
+    float: left;
+}
+.deforestation{
+    border-radius: 3%;
 }
