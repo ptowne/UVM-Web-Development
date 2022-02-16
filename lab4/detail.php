@@ -10,7 +10,7 @@
     <meta name="description" content="Around 80,000 acres of tropical rainforest are cut down every day. Deforestation has ridden our planet and is
         killing one of the earth's most helpful and beautiful plants: trees. It is uncertain whether this deforestation will ever end, but we can ease its
         damaging effects by planting more trees.">
-    <link rel="stylesheet" href="css/cusstom.css?version=<?php print time(); ?>" type="text/css">
+    <link rel="stylesheet" href="css/custom.css?version=<?php print time(); ?>" type="text/css">
 </head>
 
 <body class = "if-needed">
@@ -27,10 +27,9 @@
     <main>
         <section>
             <h2>A More Detailed Timeline of Deforestation</h2>
-            <figure class = "deforestation">
-                <img href = "images/deforestation2.jpg" class = "deforestation" alt = "Deforestation">
-                <figcaption>Deforestation [photo: Esemelwe]</figcaption>
-                <cite>Esemelwe</cite>
+            <figure class = "deforestation2">
+                <img src = "images/deforestation2.jpg" class = "deforestation2" alt = "Deforestation">
+                <figcaption>Deforestation [photo: Esemelwe] <cite>Esemelwe</cite></figcaption>
             </figure>
             <section>
                 <h4>1700-1850</h4>
@@ -61,10 +60,9 @@
                 <p>Eventually, countries reach a <strong>forest transition point</strong> where more trees are regrown than lost. Around
                 the end of 1990, forests reached their transition points, causing tree loss to decrease to 128 million in 2000.</p>
             </section>
-            <figure class = "deforestation">
-                <img href = "images/deforestation3.jpg" class = "deforestation" alt = "Deforestation">
-                <figcaption>Deforestaion [photo: Alain Compost]</figcaption>
-                <cite>Alain Compost</cite>
+            <figure class = "deforestation3">
+                <img src = "images/deforestation3.jpg" class = "deforestation3" alt = "Deforestation">
+                <figcaption>Deforestaion [photo: Alain Compost] <cite>Alain Compost</cite></figcaption>
             </figure>
             <section>
                 <h4>Today and Onward</h4>
