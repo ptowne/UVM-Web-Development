@@ -1,9 +1,12 @@
 /* constants here */
 :root {
-    --main-background-color: rgb(0,104,102);
+    --main-background-color: rgb(129, 206, 155);
     --main-text-color: rgb(0,0,0);
     --main-background-image: url(../images/tree.jpg);
     --main-font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+    --second-color: rgb(1, 134, 101);
+    --third-color: darkgreen;
+    --fourth-color: rgb(0, 125, 73);
 }
 html{
     background-image: var(--main-background-image);
@@ -18,7 +21,7 @@ figure{
     text-align: center;
     width: 20%;
     border-radius: 3px;
-    border: thin solid darkgreen;
+    border: thin solid var(--third-color);
 }
 figcaption{
     text-align: center;
@@ -36,7 +39,13 @@ header h2{
     text-align:center;
 }
 nav a{
-    background-color: lightblue;
+    display: inline-block;
+    width: 19%;
+}
+nav {
+    border: thin solid var(--third-color);
+    background-color: var(--third-color);
+    text-align: center;
 }
 a:hover{
     background-color: blue;
@@ -63,4 +72,13 @@ cite {
 }
 .deforestation{
     border-radius: 3%;
+}
+nav a:link{
+    background-color: var(--second-color);
+    color: #009;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    background-color: var(--fourth-color);
 }
