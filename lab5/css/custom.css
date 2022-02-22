@@ -23,7 +23,7 @@ html{
 figure{
     float: right;
     text-align: center;
-    width: 20%;
+    width: 100%;
     border-radius: 1em;
     border: thin solid var(--third-color);
     background-color: var(--main-background-color);
@@ -133,4 +133,64 @@ form{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Starting grid layout */
+.grid-layout {
+    display: grid;
+    grid-template-areas: "header header"
+                    "nav nav"
+                    "main main"
+                    "footer footer";
+    grid-template-columns: auto auto;
+}
+.grid-layout .header {
+    grid-area: header;
+}
+.grid-layout .nav {
+    grid-area: nav;
+}
+.grid-layout .main {
+    grid-area: main;
+}
+.grid-layout .footer {
+    grid-area: footer;
+}
+.grid-layout main{
+    display: grid;
+    grid-template-areas: "what-is deforestation"
+                    "timeline-table timeline-table"
+                    "effects effects"
+                    "slashandburn slash-photo"
+                    "slashandburn-effects other-effects"
+                    "why-trees why-trees";
+    grid-template-columns: auto auto;
+    grid-gap: 1%;
+}
+.grid-layout .what-is{
+    grid-area: what-is;
+}
+.grid-layout .deforestation {
+    grid-area: deforestation;
+}
+.grid-layout .timeline-table {
+    grid-area: timeline-table;
+}
+.grid-layout .slashandburn {
+    grid-area: slashandburn;
+}
+.grid-layout .slashandburn-effects {
+    grid-area: slashandburn-effects;
+}
+.grid-layout .slash-photo {
+    grid-area: slash-photo;
+}
+.grid-layout .other-effects {
+    grid-area: other-effects;
+}
+.grid-layout .why-trees {
+    grid-area: why-trees;
+}
+.effects {
+    text-align: center;
 }
