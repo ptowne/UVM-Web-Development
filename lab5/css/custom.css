@@ -1,1 +1,136 @@
-
+/* constants here */
+:root {
+    --main-background-color: rgb(129, 206, 155);
+    --main-text-color: rgb(0,0,0);
+    --main-background-image: url(../images/tree.jpg);
+    --main-font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+    --second-color: rgb(1, 134, 101);
+    --third-color: rgb(0,100, 0);
+    --fourth-color: rgb(0, 125, 73);
+    --background-odd: rgb(143, 188, 255);
+    --background-even: rgb(95, 159, 253);
+    --table-light: rgb(53, 133, 253);
+    --table-dark: rgb(13, 110, 255);
+}
+html{
+    background-image: var(--main-background-image);
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    font-family: var(--main-font-family);
+    margin: 1em;
+    padding: 1em;
+}
+figure{
+    float: right;
+    text-align: center;
+    width: 20%;
+    border-radius: 1em;
+    border: thin solid var(--third-color);
+    background-color: var(--main-background-color);
+}
+figcaption{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    border-radius: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+header h1{
+    text-align: center;
+    color: darkgreen;
+}
+header h2{
+    text-align:center;
+    color: rgb(41, 126, 41);
+}
+nav a{
+    display: inline-block;
+    width: 19%;
+}
+nav {
+    border: thin solid var(--third-color);
+    background-color: var(--third-color);
+    text-align: center;
+}
+a:hover{
+    background-color: white;
+}
+h1 {
+    text-transform: uppercase;
+}
+p{
+    text-indent: 1em;
+    text-align: left;
+}
+cite {
+    font-size: xx-small;
+}
+.forest{
+    text-align: center;
+    font-size: x-small;
+    border-radius: 3%;
+    float: left;
+}
+.deforestation{
+    border-radius: 3%;
+}
+.deforestation2{
+    border-radius: 3%;
+}
+.deforestation3{
+    border-radius: 3%;
+    float: left;
+    width: auto;
+    height: auto;
+}
+nav a:link{
+    background-color: var(--second-color);
+    color: #009;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    background-color: var(--fourth-color);
+}
+/* index page */
+table{
+    border: medium solid var(--table-dark);
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+}
+tr:nth-child(odd){
+    background-color: var(--background-odd);
+}
+tr:nth-child(even){
+    background-color: var(--background-even);
+}
+caption{
+    font-size: small;
+    font-weight: bold;
+} 
+td, th {
+    border: thin solid var(--table-light);
+    padding: 1%;
+}
+table~tr {
+    font-weight: bold;
+}
+li:nth-child(odd){
+    background-color: var(--background-odd);
+}
+li:nth-child(even){
+    background-color: var(--background-even);
+}
+/* form */
+.form{
+    text-indent: 0%;
+}
+form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
