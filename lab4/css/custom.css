@@ -17,14 +17,14 @@ html{
     background-color: var(--main-background-color);
     color: var(--main-text-color);
     font-family: var(--main-font-family);
-    margin: 25px 25px 25px 25px;
-    padding: 25px 25px 25px 25px;
+    margin: 1em;
+    padding: 1em;
 }
 figure{
     float: right;
     text-align: center;
     width: 20%;
-    border-radius: 3px;
+    border-radius: 1em;
     border: thin solid var(--third-color);
     background-color: var(--main-background-color);
 }
@@ -33,7 +33,7 @@ figcaption{
 }
 img{
     max-width: 100%;
-    border-radius: 3px;
+    border-radius: 3em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -61,14 +61,13 @@ h1 {
     text-transform: uppercase;
 }
 p{
-    text-indent: 20px;
+    text-indent: 1em;
     text-align: left;
 }
 cite {
     font-size: xx-small;
 }
 .forest{
-    width: 300px;
     text-align: center;
     font-size: x-small;
     border-radius: 3%;
@@ -84,7 +83,7 @@ cite {
     border-radius: 3%;
     float: left;
     width: auto;
-    height: 210px;
+    height: auto;
 }
 nav a:link{
     background-color: var(--second-color);
@@ -115,7 +114,7 @@ caption{
 } 
 td, th {
     border: thin solid var(--table-light);
-    padding: 1em;
+    padding: 1%;
 }
 table~tr {
     font-weight: bold;
@@ -128,7 +127,7 @@ li:nth-child(even){
 }
 /* form */
 .form{
-    text-indent: 0px;
+    text-indent: 0%;
 }
 form{
     display: block;
