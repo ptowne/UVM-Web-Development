@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="css/custom.css?version=<?php print time();?>" type="text/css">
 </head>
 
-<body class="if-needed">
-    <header>
+<body class="grid-layout">
+    <header class = "header">
         <!-- main header: plant more trees -->
         <h1>Plant More Trees</h1>
         <h2>Deforestation's damaging effects and how we can stop it</h2>
     </header>
-    <nav>
+    <nav class = "nav">
         <a href="index.php">Home</a>
         <a href="detail.php">Timeline</a>
         <a href="form.php">Form</a>
     </nav>
-    <main>
+    <main class = "main">
         <figure class = "deforestation">
             <img src="images/deforestation.jpg" alt="Deforestation" width="300" class = "deforestation">
             <figcaption>Slash and Burn Deforestation [photo: Getty Images] <cite>Getty Images</cite></figcaption>
@@ -41,8 +41,10 @@
                 materials.
                 As a result, we lose around 80,000 acres of tropical rainforest every single day (<em>approximately 27
                     football fields per minute</em>).</p>
+        </section>
             <!-- table with deforestation timeline -->
-            <table>
+        <section class = "timeline-table">
+            <table class>
                 <caption><strong>A Timeline of Deforestation</strong></caption>
                 <tr>
                     <th>Year</th>
@@ -85,8 +87,17 @@
         <!-- Header about the effects of deforestation -->
         <section class="effects">
             <h2>The Damaging Effects of Deforestation</h2>
+        </section>
             <!-- P1: about slash and burn method -->
-            <p>As we know by now, deforestation is occuring every day on our earth as a result of construction,
+            <section class = "slash-photo">
+                <figure>
+                    <img src = "images/slashandburn.jpg" alt = "Slash and Burn Deforestation" class = "slash-photo">
+                    <figcaption>Slash and Burn Agriculture [photo: DW] <cite>DW</cite></figcaption>
+                </figure>
+            </section>
+            <section class = "slashandburn">
+                <h4>The Slash and Burn Method</h4>
+                <p>As we know by now, deforestation is occuring every day on our earth as a result of construction,
                 agriculture,
                 and other human activity.
                 One type of deforestation, used for agriculture, is called the slash and burn method, in which farmers
@@ -95,8 +106,11 @@
                 soil,
                 however, becomes
                 unusable after a few years, so farmers must move to another location and repeat the method.</p>
-            <!--P2: about the effects of slash and burn method -->
-            <p>Trees hold carbon dioxide in their wood. When they are burned, this carbon dioxide goes up into the
+                </section>  
+                <!--P2: about the effects of slash and burn method -->
+            <section class = "slashandburn-effects">
+                <h4>Effects of the Slash and Burn Method</h4>
+                <p>Trees hold carbon dioxide in their wood. When they are burned, this carbon dioxide goes up into the
                 atmosphere, resulting in increased levels
                 of global warming. With the slash and burn method, large plots of land are burned, used for agriculture,
                 then abandoned. The temporary positive effects
@@ -104,9 +118,11 @@
                 another plot to clear out every few years. This justs
                 adds to the accumulation of carbon dioxide in our atmosphere, accelerating global warming to concerning
                 levels.</p>
-
             <!--P3: other negative effects of deforestation -->
-            <p>In addition to the unnerving amounts of carbon dioxide in the atmosphere, deforestation also contributes
+            </section>
+            <section class = "other-effects">
+                <h4>Other Negative Effects of Deforestation</h4>
+                <p>In addition to the unnerving amounts of carbon dioxide in the atmosphere, deforestation also contributes
                 soil
                 erosion and flooding. Trees provide
                 nutrients to soil which helps support the growth of other plants in the forest. When farmers can no
@@ -118,12 +134,8 @@
                 take shelter under trees and canopies. Deforestation also causes drastic temperature changes, which
                 makes
                 animal's habitats more inhospitable.</p>
-        </section>
+            </section>
         <!-- Header and list about how trees can help the environment -->
-        <figure class = "forest">
-            <img src="images/forest.jpg" alt="Forest of Trees" width="300" class = "forest">
-            <figcaption>Lush Forest [photo: infoguides] <cite>infoguides</cite></figcaption>
-        </figure>
         <section class="why-trees">
             <h2>How Trees Help our Earth</h2>
             <ul>
@@ -169,16 +181,8 @@
                 </li>
             </ul>
         </section>
-        <!-- Section for other sources used -->
-        <p>Other Sources Used:
-            <cite><a href="https://www.nationalgeographic.org/encyclopedia/deforestation/#:~:text=Deforestation%20is%20the%20purposeful%20clearing%20of%20forested%20land.&text=About%202%2C000%20years%20ago%2C%2080,1870s%20for%20timber%20and%20agriculture"
-                    target="_blank">National Geographic</a></cite>
-            <cite><a
-                    href="https://www.scientificamerican.com/article/earth-talks-daily-destruction/#:~:text=Pinning%20down%20exact%20numbers%20is,day%20on%20top%20of%20that.">Scientific
-                    American</a></cite>
-        </p>
     </main>
-    <footer>
+    <footer class = "footer">
         <p><a href = "../index.php">Site map (Main index)</a></p>
     </footer>
 </body>
