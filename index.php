@@ -5,7 +5,7 @@
         <title>Hannah's CS008 Index</title>
         <meta name="author" content="Hannah Sheridan">
         <meta name="description" content="A site map to my CS008 assignments for the 2022 Spring Semester.">
-
+        <link rel="SHORTCUT ICON" type="image/x-icon" href="images/trees.ico">
         <style>
             /* Basic CSS */
             body {
@@ -35,6 +35,37 @@
             .small {
                 width: 20%
             }
+            .header {
+                grid-area: header;
+                grid-column: 1 / 3;
+                padding: .5%;
+                margin: .5%;
+            }
+            .public-files {
+                grid-area: public-files;
+                padding: .5%;
+                margin: .5%;
+            }
+            .supporting-files {
+                grid-area: supporting-files;
+                padding: .5%;
+                margin: .5%;
+            }
+            .grader-notes {
+                grid-area: grader-notes;
+                padding: .5%;
+                margin: .5%;
+            }
+            .grid-layout {
+                border-bottom: thin dashed navy;
+                display: inline-grid;
+                grid-template-columns: 25% 25% 50%;
+                grid-template-areas: "header header header" 
+                    "public-files supporting-files grader-notes";
+                padding: .5%;
+                margin: .5%;
+                width: 100%;
+            }
         </style>
     </head>
 
@@ -48,6 +79,30 @@
         <h1>CS 008-<em>B</em> Spring 2022</h1>
         <h2>Hannah Sheridan - Site map</h2>
         <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
+<!-- Section: Lab Five -->
+        <section class = "grid-layout">
+        <h2 class = "header">Lab Five - Adding more style.</h2>
+            <!-- Public Files -->
+            <section class = "public-files">
+                <h3>Public Files</h3>
+                <p><a href = "lab5/detail.php">detail.php</a></p>
+                <p><a href = "lab5/form.php">form.php</a></p>
+                <p><a href = "lab5/index.php">index.php</a></p>
+                <p></p>
+            </section>
+            <!-- Supporting Files -->
+            <section class = "supporting-files">
+                <h3>Supporting Files</h3>
+                <p><a href = "lab5/css/custom.css">custom.css</a></p>
+                <p><a href = "wireframe.png">wireframe.png</a></p>
+                <p></p>
+            </section>
+            <!-- Grader Notes -->
+            <section class = "grader-notes">
+                <h3>Notes to Grader</h3>
+                <p></p>
+            </section>
+        </section>
 
 <!-- Section: Lab Four -->
         <section class = "grid-layout">
@@ -55,16 +110,16 @@
             <!-- Public Files -->
             <section class = "public-files">
                 <h3>Public Files</h3>
-                <p><a href = "lab4/detail.php"></a></p>
-                <p><a href = "lab4/form.php"></a></p>
-                <p><a href = "lab4/index.php"></a></p>
+                <p><a href = "lab4/detail.php">detail.php</a></p>
+                <p><a href = "lab4/form.php">form.php</a></p>
+                <p><a href = "lab4/index.php">index.php</a></p>
                 <p></p>
             </section>
             <!-- Supporting files -->
             <section class = "supporting-files">
                 <h3>Supporting Files</h3>
                 <p><a href = "lab4/css/custom.css">custom.css</a></p>
-                <p><a href = "wireframe.png">custom.css</a></p>
+                <p><a href = "wireframe.png">wireframe.png</a></p>
                 <p></p>
             </section>
             <!-- Notes to grader -->
