@@ -81,7 +81,6 @@ cite {
 }
 .deforestation3{
     border-radius: 3%;
-    float: left;
     width: auto;
     height: auto;
 }
@@ -192,5 +191,40 @@ form{
     grid-area: why-trees;
 }
 .effects {
+    text-align: center;
+}
+
+/* Flexbox layout */
+.flexbox-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.flexbox-layout main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.flexbox-layout .flex-head {
+    flex: 0 1 100%;
+}
+.flexbox-layout .flex-nav {
+    flex: 0 1 100%;
+}
+.flexbox-layout .detail-timeline {
+    flex: 0 1 100%;
+}
+.flexbox-layout .deforestation2 {
+    flex: 0 1 40%;
+    justify-content: flex-end; 
+}
+.flexbox-layout .deforestation3 {
+    flex: 0 1 38%;
+    justify-content: flex-end;
+}
+.flexbox-layout h1 {
+    flex: 1 0 100%;
     text-align: center;
 }
