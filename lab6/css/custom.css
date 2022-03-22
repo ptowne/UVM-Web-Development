@@ -186,7 +186,12 @@ body {
     font-size: 1.8em;
 }
 .index-page ul {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+.index-page .footer {
+    margin-top: 1em;
 }
 .index-page main{
     display: grid;
@@ -213,15 +218,20 @@ body {
 }
 .index-page .slashandburn {
     grid-area: slashandburn;
+    margin: 1em;
 }
 .index-page .slashandburn-effects {
     grid-area: slashandburn-effects;
+    margin: 1em;
 }
 .index-page .slash-photo {
     grid-area: slash-photo;
+    margin: inherit;
+    height: 80%;
 }
 .index-page .other-effects {
     grid-area: other-effects;
+    margin: 1em;
 }
 .index-page .why-trees {
     grid-area: why-trees;
@@ -265,6 +275,8 @@ body {
     display: grid;
     grid-row: 2;
     grid-column: 1 / 5;
+    font-size: 1.3em;
+    margin: 2em;
 }
 .detail-page .timeline-section1 {
     display: grid;
@@ -317,8 +329,9 @@ body {
 .detail-page .deforestation-figures {
     display: grid;
     grid-template-areas: "deforestation2 deforestation3";
-    grid-column: 1;
+    grid-column: 1 / 5;
     grid-row: 8;
+
 }
 .detail-page .deforestation-figures figure {
     width: 80%;
@@ -338,6 +351,8 @@ body {
     grid-area: today-on;
     grid-row: 9;
     grid-column: 1 / 5;
+    font-size: 1.5em;
+    padding: 3em;
 }
 
 
@@ -372,7 +387,7 @@ body {
     grid-area: forest;
     width: 90%;
     grid-column: 1 / 2;
-    float: left;
+
 }
 .form label {
     font-size: small;
