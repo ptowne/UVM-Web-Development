@@ -3,7 +3,6 @@
     grid-template-areas: "header" "nav" "main" "footer";
 }
 .index-page main {
-    display: grid;
     grid-template-areas: "what-is"
                         "deforestation"
                         "slash-photo"
@@ -56,41 +55,39 @@
 
 /** DETAIL PAGE */
 .detail-page {
-    display: grid;
     grid-template-areas: "header" "nav" "main" "footer";
 }
 .detail-timeline .timeline-section1 {
-    grid-template-areas: "timeline-subsection1" "timeline-subsection2";
+    grid-template-areas: "industrial-tire" "timeline-subsection1" "timeline-subsection2";
 }
 .detail-timeline .timeline-subsection1 {
-    grid-row: 1;
+    grid-row: 2;
 }
 
 .detail-timeline .timeline-subsection2 {
-    grid-row: 2;
-}
-.detail-timeline .timeline-section2 {
-    grid-template-areas: "timeline-subsection3" "timeline-subsection4";
-}
-.detail-timeline .timeline-subsection3 {
     grid-row: 3;
 }
-.detail-timeline .timeline-subsection4 {
-    grid-row: 4;
+.detail-timeline .timeline-section2 {
+    grid-template-areas: "great-depression" "timeline-subsection3" "timeline-subsection4";
 }
-.detail-timeline .timeline-section3 {
-    grid-template-areas: "timeline-subsection5" "timeline-subsection6";
-}
-.detail-timeline .timeline-subsection5 {
+.detail-timeline .timeline-subsection3 {
     grid-row: 5;
 }
-.detail-timeline .timeline-subsection6 {
+.detail-timeline .timeline-subsection4 {
     grid-row: 6;
+}
+.detail-timeline .timeline-section3 {
+    grid-template-areas: "peak" "timeline-subsection5" "timeline-subsection6";
+}
+.detail-timeline .timeline-subsection5 {
+    grid-row: 8;
+}
+.detail-timeline .timeline-subsection6 {
+    grid-row: 9;
 }
 
 /** FORM PAGE */
 .form {
-    display: grid;
     grid-template-areas: "header" "nav" "main" "footer";
 }
 .form main {
@@ -104,6 +101,7 @@
     grid-column: 1 / 5;
     grid-row: 2;
     margin-top: 0em;
+    margin-left: 0em;
 }
 .form .postarray {
     grid-row: 3;
