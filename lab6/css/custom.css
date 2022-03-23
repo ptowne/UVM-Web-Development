@@ -35,6 +35,9 @@ figure{
 figcaption{
     text-align: center;
 }
+footer {
+    font-size: 1.2em;
+}
 img{
     max-width: 100%;
     border-radius: 1em;
@@ -171,6 +174,7 @@ body {
 }
 .nav {
     grid-area: nav;
+    text-shadow: 0 0 0.3em white;
 }
 .main {
     grid-area: main;
@@ -178,7 +182,7 @@ body {
 .footer {
     grid-area: footer;
 }
-.index-page main h2 {
+main h2 {
     background-color: var(--second-color);
     border: 0.2em solid var(--third-color);
     color: var(--darker-green);
@@ -191,14 +195,14 @@ body {
     margin-right: 1.5em;
 }
 .index-page .footer {
-    margin-top: 1em;
+    margin-top: 10em;
 }
 .index-page main{
     display: grid;
     grid-template-areas: "what-is deforestation" 
     "timeline-table timeline-table"
     "effects effects"
-    "slashandburn slash-photo"
+    "slashandburn slash"
     "slashandburn-effects other-effects"
     "why-trees why-trees";
     grid-gap: 1%;
@@ -212,6 +216,10 @@ body {
 }
 .index-page .deforestation-photo {
     margin: 0%;
+    max-width: 100%;
+}
+.index-page .timeline-table h2 {
+    text-align: center;
 }
 .index-page .timeline-table {
     grid-area: timeline-table;
@@ -224,10 +232,13 @@ body {
     grid-area: slashandburn-effects;
     margin: 1em;
 }
-.index-page .slash-photo {
-    grid-area: slash-photo;
+.index-page .slash {
+    grid-area: slash;
     margin: inherit;
-    height: 80%;
+   /** max-height: 80%; */
+}
+.index-page .slash-photo {
+    max-width: 100%;
 }
 .index-page .other-effects {
     grid-area: other-effects;
@@ -263,12 +274,18 @@ body {
                         "timeline-section1 timeline-section1"
                         "timeline-section2 timeline-section2"
                         "timeline-section3 timeline-section3"
-                        "deforestation2 deforestation3"
+                        "deforestation-figures deforestation-figures"
                         "today-on today-on";
     gap: 1em;
 }
 .detail-header {
     grid-column: 1 / 5;
+    text-align: center;
+    color: darkgreen;
+    background-color: var(--second-color);
+    border: 0.1em solid var(--third-color);
+    text-shadow: 0 0 0.1em lightgreen;
+    text-transform: uppercase;
 }
 .detail-page .detail-timeline {
     grid-area: detail-timeline;
@@ -276,17 +293,28 @@ body {
     grid-row: 2;
     grid-column: 1 / 5;
     font-size: 1.3em;
-    margin: 2em;
+}
+.detail-page .figure-header {
+    grid-area: figure-header;
 }
 .detail-page .timeline-section1 {
     display: grid;
-    grid-template-areas: "timeline-subsection1 timeline-subsection2";
+    grid-template-areas: "industrial-tire industrial-tire" "timeline-subsection1 timeline-subsection2";
     grid-row: 2;
+    grid-column: 1 / 5;
 }
 .detail-page .timeline-section1 section {
     border: 0.05em solid black;
-    height: 10em;
     text-align: center;
+}
+.timeline-section1 .industrial-tire {
+    grid-area: industrial-tire;
+}
+.timeline-section2 .great-depression {
+    grid-area: great-depression;
+}
+.timeline-section3 .peak{
+    grid-area: peak;
 }
 .detail-page .timeline-subsection1 {
     grid-area: timeline-subsection1;
@@ -296,12 +324,12 @@ body {
 }
 .detail-page .timeline-section2 {
     display: grid;
-    grid-template-areas: "timeline-subsection3 timeline-subsection4";
+    grid-template-areas: "great-depression great-depression" "timeline-subsection3 timeline-subsection4";
     grid-row: 3;
+    grid-column: 1 /5;
 }
 .detail-page .timeline-section2 section {
     border: 0.05em solid black;
-    height: 10em;
     text-align: center;
 }
 .detail-page .timeline-subsection3 {
@@ -312,12 +340,12 @@ body {
 }
 .detail-page .timeline-section3 {
     display: grid;
-    grid-template-areas: "timeline-subsection5 timeline-subsection6";
+    grid-template-areas: "peak peak" "timeline-subsection5 timeline-subsection6";
     grid-row: 4;
+    grid-column: 1/5;
 }
 .detail-page .timeline-section3 section {
     border: 0.05em solid black;
-    height: 10em;
     text-align: center;
 }
 .detail-page .timeline-subsection5 {
@@ -328,7 +356,7 @@ body {
 }
 .detail-page .deforestation-figures {
     display: grid;
-    grid-template-areas: "deforestation2 deforestation3";
+    grid-template-areas: "figure-header figure-header" "deforestation2 deforestation3";
     grid-column: 1 / 5;
     grid-row: 8;
 
@@ -342,17 +370,20 @@ body {
 .detail-page .deforestation3 {
     grid-area: deforestation3;
 }
-.detail-page h2 {
+/**.detail-page h2 {
     grid-area: detail-h2;
     text-align: center;
     font-size: x-large;
 }
+*/
 .detail-page .today-on {
     grid-area: today-on;
     grid-row: 9;
     grid-column: 1 / 5;
-    font-size: 1.5em;
     padding: 3em;
+}
+.detail-page .today-on p {
+    font-size: 1.3em;
 }
 
 
@@ -368,11 +399,18 @@ body {
 .the-form {
     margin-top: 6em;
 }
+.the-form h4{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    text-align: center;
+    background-color: var(--form-dark);
+}
 .form .the-form {
     grid-area: the-form;
     border: .2em solid var(--form-darker);
     background-color: var(--form-light);
     grid-column: 2 / 5;
+    margin-left: 5em;
 }
 .form main > h1 {
     grid-row: 1;
