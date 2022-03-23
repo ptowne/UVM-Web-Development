@@ -1,1 +1,28 @@
+/** INDEX PAGE */
+.index-page .slashandburn-effects {
+    grid-row: 7;
+    grid-column: 1 / 4;
+}
+.index-page .slashandburn {
+    grid-column: 1 / 4;
+}
+.index-page .why-trees ul {
+    margin: 0em;
+}
+.index-page .footer {
+    margin-top: 20em;
+}
+.index-page .slash {
+    grid-column: 1 / 3;
+}
 
+/** DETAIL PAGE */
+.detail-page .detail-timeline {
+    margin: 0em;
+}
+.detail-page .today-on {
+    padding: 0em;
+}
+.detail-page .deforestation-figures {
+    grid-column: 1 / 4;
+}
