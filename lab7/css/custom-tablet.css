@@ -1,0 +1,120 @@
+/** INDEX PAGE */
+.index-page {
+    grid-template-areas: "header" "nav" "main" "footer";
+}
+.index-page main {
+    grid-template-areas: "what-is"
+                        "deforestation"
+                        "slash-photo"
+                        "timeline-table"
+                        "effects"
+                        "slashandburn"
+                        "slashandburn-effects"
+                        "other-effects"
+                        "why-trees";
+}
+
+.index-page .deforestation {
+    width: 90%;
+    grid-column: 3;
+}
+.index-page .deforestation-photo {
+    max-width: 100%;
+}
+.index-page .deforestation-figures {
+    grid-column: 1 / 5;
+}
+
+.index-page .slash {
+    width: 100%;
+    justify-self: end;
+    grid-row: 2;
+    grid-column: 1;
+}
+.index-page .slash-photo {
+    max-width: 100%;
+}
+
+.index-page .what-is {
+    grid-column: 1 / 4;
+}
+
+.index-page .timeline-table {
+    grid-column: 1 / 4;
+}
+.index-page .why-trees {
+    grid-column: 1 / 4;
+}
+.index-page .effects {
+    grid-column: 1 / 4;
+}
+.index-page .slashandburn-effects {
+    grid-row: 6;
+    grid-column: end;
+}
+.index-page .other-effects {
+    grid-column: 1 / 4;
+}
+.index-page .slashandburn {
+    margin: 1em;
+}
+.index-page .slashandburn-effects {
+    margin: 1em;
+}
+.index-page .other-effects {
+    margin: 1em;
+}
+
+/** DETAIL PAGE */
+.detail-page {
+    grid-template-areas: "header" "nav" "main" "footer";
+}
+.detail-timeline .timeline-section1 {
+    grid-template-areas: "industrial-tire" "timeline-subsection1" "timeline-subsection2";
+}
+.detail-timeline .timeline-subsection1 {
+    grid-row: 2;
+}
+
+.detail-timeline .timeline-subsection2 {
+    grid-row: 3;
+}
+.detail-timeline .timeline-section2 {
+    grid-template-areas: "great-depression" "timeline-subsection3" "timeline-subsection4";
+}
+.detail-timeline .timeline-subsection3 {
+    grid-row: 5;
+}
+.detail-timeline .timeline-subsection4 {
+    grid-row: 6;
+}
+.detail-timeline .timeline-section3 {
+    grid-template-areas: "peak" "timeline-subsection5" "timeline-subsection6";
+}
+.detail-timeline .timeline-subsection5 {
+    grid-row: 8;
+}
+.detail-timeline .timeline-subsection6 {
+    grid-row: 9;
+}
+
+/** FORM PAGE */
+.form {
+    grid-template-areas: "header" "nav" "main" "footer";
+}
+.form main {
+    grid-template-areas: "the-form" "array" "forest";
+}
+.form .helpsave {
+    grid-row: 1;
+    grid-column: 1 / 5;
+}
+.form .the-form {
+    grid-column: 1 / 5;
+    grid-row: 2;
+    margin-top: 0em;
+    margin-left: 0em;
+}
+.form .postarray {
+    grid-row: 3;
+}
