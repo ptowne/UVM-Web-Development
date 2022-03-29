@@ -1,32 +1,6 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-<head>
-    <!-- meta tags and title -->
-    <meta charset="utf-8">
-    <title>Plant More Trees</title>
-    <meta name="author" content="Hannah Sheridan">
-    <!-- description: about trees, deforestation, and how planting can save the environment -->
-    <meta name="description" content="Around 80,000 acres of tropical rainforest are cut down every day. Deforestation has ridden our planet and is
-        killing one of the earth's most helpful and beautiful plants: trees. It is uncertain whether this deforestation will ever end, but we can ease its
-        damaging effects by planting more trees.">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> 
-    <link rel="stylesheet" href="css/custom.css?version=<?php print time(); ?>" type="text/css">
-    <link rel="stylesheet" media = "(max-width: 800px)" href="css/custom-tablet.css?version=<?php print time();?>" type="text/css">
-    <link rel="stylesheet" media = "(max-width: 600px)" href="css/custom-phone.css?version=<?php print time();?>" type="text/css">
-</head>
-
-<body class="form">
-    <header class = "header">
-        <!-- main header: plant more trees -->
-        <h1>Plant More Trees</h1>
-        <h2>Deforestation's damaging effects and how we can stop it</h2>
-    </header>
-    <nav class = "nav">
-        <a href="index.php">Home</a>
-        <a href="detail.php">Timeline</a>
-        <a href="form.php">Form</a>
-    </nav>
+<?php
+include 'top.php';
+?>
     <main class = "main">
         <h1 class = "helpsave">Help Save Our Rainforests</h1>
         <section class="postarray">
@@ -128,9 +102,9 @@
         </section>
 
     </main>
-    <footer class = "footer">
-        <p><a href="../index.php">Site map (Main index)</a></p>
-    </footer>
+<?php
+include 'footer.php';
+?>
 
 </body>
 
