@@ -1,8 +1,8 @@
 /** INDEX PAGE */
-.index-page {
+.index {
     grid-template-areas: "header" "nav" "main" "footer";
 }
-.index-page main {
+.index main {
     grid-template-areas: "what-is"
                         "deforestation"
                         "slash-photo"
@@ -14,59 +14,59 @@
                         "why-trees";
 }
 
-.index-page .deforestation {
+.index .deforestation {
     width: 90%;
     grid-column: 3;
 }
-.index-page .deforestation-photo {
+.index .deforestation-photo {
     max-width: 100%;
 }
-.index-page .deforestation-figures {
+.index .deforestation-figures {
     grid-column: 1 / 5;
 }
 
-.index-page .slash {
+.index .slash {
     width: 100%;
     justify-self: end;
     grid-row: 2;
     grid-column: 1;
 }
-.index-page .slash-photo {
+.index .slash-photo {
     max-width: 100%;
 }
 
-.index-page .what-is {
+.index .what-is {
     grid-column: 1 / 4;
 }
 
-.index-page .timeline-table {
+.index .timeline-table {
     grid-column: 1 / 4;
 }
-.index-page .why-trees {
+.index .why-trees {
     grid-column: 1 / 4;
 }
-.index-page .effects {
+.index .effects {
     grid-column: 1 / 4;
 }
-.index-page .slashandburn-effects {
+.index .slashandburn-effects {
     grid-row: 6;
     grid-column: end;
 }
-.index-page .other-effects {
+.index .other-effects {
     grid-column: 1 / 4;
 }
-.index-page .slashandburn {
+.index .slashandburn {
     margin: 1em;
 }
-.index-page .slashandburn-effects {
+.index .slashandburn-effects {
     margin: 1em;
 }
-.index-page .other-effects {
+.index .other-effects {
     margin: 1em;
 }
 
 /** DETAIL PAGE */
-.detail-page {
+.detail {
     grid-template-areas: "header" "nav" "main" "footer";
 }
 .detail-timeline .timeline-section1 {
