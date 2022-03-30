@@ -5,11 +5,18 @@
     }
     ?>" href="index.php">Home</a>
 
+
     <a class = "<?php
     if ($pathParts['filename'] == 'detail') {
         print 'activePage';
     }
     ?>" href="detail.php">Timeline</a>
+
+    <a class = "<?php
+    if($pathParts['filename'] == 'array') {
+        print 'activePage';
+    }
+    ?>" href="array.php">About Trees</a>
 
     <a class = "<?php
     if($pathParts['filename'] == 'form') {

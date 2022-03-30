@@ -116,39 +116,39 @@ include 'top.php';
             <h2>How Trees Help our Earth</h2>
             <ul>
                 <li><strong>Trees provide oxygen</strong>
-                    <ul>
+                    <!--<ul>
                         <li>Trees take in carbon dioxide to create oxygen for us to breathe, reducing CO2 levels in the
                             process. While the ocean provides most of the earth's oxygen, rainforests account for around
                             28%
                             of the earth's oxygen.</li>
-                    </ul>
+                    </ul>-->
                 </li>
                 <li><strong>Trees provide habitats for animals</strong>
-                    <ul>
+                    <!--<ul>
                         <li>Trees give a variety of animals and insects shelter and food. Trees improve the ecostystem;
                             wildlife often choose to be in areas with a good amount of trees.</li>
-                    </ul>
+                    </ul>-->
                 </li>
                 <li><strong>Trees reduce erosion and flooding</strong>
-                    <ul>
+                    <!--<ul>
                         <li>A Tree's leaves catches rain as it falls, lessening the amount of water that reaches the
                             ground
                             and reducing flooding. Trees also have large roots that absorb water and hold soil in place,
                             reducing erosion.</li>
-                    </ul>
+                    </ul>-->
                 </li>
                 <li><strong>Trees decrease air pollutants</strong>
-                    <ul>
+                    <!--<ul>
                         <li>Trees trap air pollutants in their leaves, filtering our air and making it easier for us to
                             breathe.</li>
-                    </ul>
+                    </ul>-->
                 </li>
                 <li><strong>Trees lower temperatures</strong>
-                    <ul>
+                    <!--<ul>
                         <li>When trees evaporate water, it cools the area around them. This tempers the climate and
                             reduces
                             humidity.</li>
-                    </ul>
+                    </ul>-->
                 </li>
                 <li>Sources: <cite><a href="http://www.nitrofill.com/TreeHelp.aspx"
                             target="_blank">http://www.nitrofill.com/TreeHelp.aspx</a></cite>

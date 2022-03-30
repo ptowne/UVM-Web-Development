@@ -9,41 +9,38 @@ $treeMissions = array(
 )
 ?>
     <main class = "main">
+        <h1>How Trees Help our Earth</h1>
         <section class="how-trees-help">
-            <!-- Header to talk about how trees help the earth -->
-            <h1>How Trees Help our Earth</h1>
-            <section class = "oxygen">
                 <h2>Trees Provide Oxygen</h2>
                 <p>As we breathe in air, we release carbon dioxide. Similarily, trees breathe in CO2 and produce oxygen.
                     Trees take in the carbon dioxide in our air to create oxygen for us to breathe, reducing CO2 
                     levels in the process. While the ocean provides most of the earth's oxygen, rainforests 
                     account for around 28% of the earth's oxygen: one tree can create enough oxygen every year to keep two people alive. Without trees, our air would have high levels of CO2,
                 which would make it unhospitible for humans and would have detrimental effects on our planet and its atmosphere. </p>
-            </section>
-            <section class = "habitat">
+ 
                 <h2>Trees Provide Habitats</h2>
                 <p>Trees give a variety of animals and insects shelter and food, as they are extremely important
                     to many ecosystems. Along with reducing carbon for nature's creatures to breathe, trees improve the 
                     ecostystem surrounding these creatures. Wildlife often choose to be in areas with a good amount of trees, as they
                     can provide shade, shelter, food, and protection. Without trees, wildlife would lack an adequate shelter and food source, causing
                 many of them to fall victim to predators and unpredicable weather. </p>
-            </section>
-            <section class = "flooding">
+        
+           
                 <h2>Trees Reduce Erosion and Flooding</h2>
                 <p>Trees can reduce flooding and erosion in two ways: trees can redirect flooding, and their roots
                     can also absorb water. A Tree's leaves catches rain as it falls, lessening the amount of water that reaches 
                     the ground and reducing flooding. A tree's large, sturdy roots can also keep soil from washing away;
                     the roots of a tree can absorb water and hold soil in place, reducing erosion. With their mighty forms, trees 
                 can mitigate the strength of a storm and improve water quality by reducing soil runoff into our bodies of water.</p>
-            </section>
-            <section class = "pollution">
+         
+       
                 <h2>Trees Decrease Air Pollutants</h2>
                 <p>Trees trap air pollutants like dirt, dust, and debris in their leaves, filtering our air and 
                     making it easier for us and our wildlife to breathe. Without trees trapping air polutants, our air 
                 would be much harder to breathe and much more uncomfortable to breathe. Our cities and towns produce a lot 
             of air pollution, which makes trees even more necessary to filter our air so we can breathe.</p>
-            </section>
-            <section class = "temperature">
+          
+      
                 <h2>Trees Lower Temperatures</h2>
                 <p>The beneficial effects of trees amazingly do not stop there! Trees can also regulate air temperatures and humidity,
                     and reduce harsh wind. Places like cities can absorb heat and radiate it back, resulting in uncomfortably high 
@@ -51,7 +48,7 @@ $treeMissions = array(
                     This tempers the climate and reduces humidity. It has been observed that a trees in parking lots can significantly 
                     reduce the heat that they radiate, reducing asphalt temperatures by up to 36 degrees Farenheit and car temperatures by up to 
                 47 degrees Farenheit.</p>
-            </section>
+         
         </section>
 
         <section class = "missions">
@@ -70,7 +67,6 @@ foreach($treeMissions as $mission) {
     print '<td>' . $mission[1] . '</td>';
     print '<td>' . $mission[2] . '</td>';
     print '<td>' . $mission[3] . '</td>';
-    print '<td>' . $mission[4] . '</td>';
     print '</tr>';
 }
 ?>
