@@ -297,6 +297,9 @@ main h2 {
     grid-column: 1 / 5;
     font-size: 1.3em;
 }
+.detail .detail-timeline p {
+    font-size: 1.4em;
+}
 .detail .figure-header {
     grid-area: figure-header;
 }
@@ -380,7 +383,10 @@ main h2 {
     padding: 3em;
 }
 .detail .today-on p {
-    font-size: 1.3em;
+    font-size: 1.6em;
+}
+.detail .today-on ul {
+    font-size: 1.6em;
 }
 
 
@@ -466,4 +472,16 @@ input[type = "submit"] {
 
 .activePage {
     border: 0.5em solid rgb(12, 66, 11);
+}
+
+.how-trees-help h1 {
+    text-align: center;
+    color: darkgreen;
+    background-color: var(--second-color);
+    border: 0.1em solid var(--third-color);
+    text-shadow: 0 0 0.1em lightgreen;
+    font-size: 2em;
+}
+.how-trees-help p {
+    font-size: 1.7em;
 }
