@@ -79,6 +79,7 @@
         <h1>CS 008-<em>B</em> Spring 2022</h1>
         <h2>Hannah Sheridan - Site map</h2>
         <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
+        <p><a href ="ADMIN/table-viewer.php?getDatabase=">Database Viewer</p></a>
         <!-- Section: Lab 8 -->
         <section class = "grid-layout">
             <h2 class = "header">Lab Eight - Database to display data.</h2>
