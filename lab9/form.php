@@ -1,14 +1,155 @@
 <?php
 include 'top.php';
+
+$rainforestList = array("Amazon Rainforest", "Congo Rainforest", "Southeast Asian Rainforest", "Kinabalu National Forest", "Tongass National Forest");
+$status = false;
+
+// This function validates text data
+function verifyAlphaNum($testString) {
+    // Check for letters, numbers and dash, period, space and single quote only.
+    // added & ; and # as a single quote sanitized with html entities will have 
+    // this in it bob's will be come bob's
+    return (preg_match ("/^([[:alnum:]]|-|\.| |\'|&|;|#)+$/", $testString));
+}
+
+// This function sanitizes data
+function getData($field) {
+    if (!isset($_POST[$field])) {
+        $data = "";
+    }
+    else {
+        $data = trim($_POST[$field]);
+        $data = htmlspecialchars($data);
+    }
+    return $data;
+}
 ?>
     <main class = "main">
         <h1 class = "helpsave">Help Save Our Rainforests</h1>
+        <?php
+            /* SANITIZE FORM */
+            if ($_SERVER ["REQUEST_METHOD"] == "POST") {
+
+                $status = true;
+                    
+                // Sanitize text boxes
+                $firstName = getData("txtFirstName");
+                $lastName = getData("txtLastName");
+                $email = getData("txtEmail");
+                $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+
+                // Sanitize radio boxes
+                $help = getData("radHelp");
+
+                // Sanitize checkboxes
+                $planting = (int) getData("chkPlanting");
+                $donate = (int) getData("chkDonate");
+                $meat = (int) getData("chkMeat");
+                $farms = (int) getData("chkFarms");
+                $notInterested = (int) getData("chkNotInterested");
+
+                // Sanitize list box
+                $favRainforest = getData("lstRainforest");
+
+                // Sanitize textarea 
+                $comments = getData("txtComments");
+
+            /* VALIDATE FORM */
+                // Validate text boxes
+                    // first name
+                if ($firstName == "") {
+                    print "<p class = 'mistake'>Please enter your first name.</p>";
+                    $status = false;
+                }
+                elseif (!verifyAlphaNum($firstName)) {
+                    print "<p class = 'mistake'>Please re-enter your first name, as the one you entered contains invalid characters.</p>";
+                    $status = false;
+                }
+                
+                    // last name 
+                if ($lastName == "") {
+                    print "<p class = 'mistake'>Please enter your last name</p>";
+                    $status = false;
+                }
+                elseif (!verifyAlphaNum($lastName)) {
+                    print "<p class = 'mistake'>Please re-enter your last name, as the one you entered has invalid characters</p>";
+                    $status = false;
+                }
+
+                    // email
+                if ($email == "") {
+                    print "<p class = 'mistake'>Please enter your email</p>";
+                    $staus = false;
+                }
+                elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    print "<p class = 'mistake'>Please enter a valid email.</p>";
+                    $status = false;
+                }
+
+                // Validate radio boxes
+                if ($help != "Yes" AND $help != "No" AND $help != "Maybe") {
+                    print "<p class = 'mistake'>Please let us know if you would like to help save our rainforests.</p>";
+                    $status = false;
+                }
+                // Validate check boxes
+                $totalChecked = 0;
+                if ($planting != 1)
+                    $planting = 0;
+                $totalChecked += $planting;
+
+                if ($donate != 1)
+                    $donate =0;
+                $totalChecked += $donate;
+
+                if ($meat != 1)
+                    $meat = 0;
+                $totalChecked += $meat;
+
+                if ($farms != 1) 
+                    $farms = 0;
+                $totalChecked += $farms;
+
+                if ($notInterested != 1)
+                    $notInterested = 0;
+                $totalChecked += $notInterested;
+
+                if ($totalChecked == 0) {
+                    print "<p class = 'mistake'>Please choose at least one option that describes how you'd like to help our rainforests</p>";
+                    $status = false;
+                }
+
+                // Validate list box
+                if ($favRainforest == "") {
+                    print "<p class = 'mistake'>Please choose your favorite rainforest.</p>";
+                    $status = false;
+                }
+                elseif(!in_array($favRainforest, $rainforestList)) {
+                    print "<p class = 'mistake'>Please choose a value in the list.</p>";
+                    $status = false;
+                }
+
+                // Validate text area
+                if ($comments == "") {
+                    print "<p class = 'mistake'>Please enter a comment</p>";
+                    $status = false;
+                }
+                elseif (!verifyAlphaNum($comments)) {
+                    print "<p class = 'mistake'>Please re-enter your comment, as the one you entered has invalid characters</p>";
+                    $status = false;
+                }
+
+
+            }
+
+        ?>  
+
+
         <section class="postarray">
             <h3>Post Array</h3>
             <?php
                 print '<p>Post Array:</p><pre>';
                 print_r($_POST);
-                print '</pre>';
+                print '</pre>'; 
             ?>
         </section>
         <figure class="forest-image">
@@ -32,7 +173,7 @@ include 'top.php';
                         <label for="txtLastName">Last Name</label>
                     </p>
                     <p>
-                        <input type="text" name="txtEmail" id="txtEmail" placeholder="Ex: johndoe@email.com" required>
+                        <input type="email" name="txtEmail" id="txtEmail" placeholder="Ex: johndoe@email.com" required>
                         <label for="txtEmail">Email</label>
                     </p>
                 </fieldset>
@@ -48,13 +189,13 @@ include 'top.php';
                         <label for="radNo">No</label>
                     </p>
                     <p>
-                        <input type="radio" name="radHelp" value="Maybe later" id="radMaybe">
+                        <input type="radio" name="radHelp" value="Maybe" id="radMaybe">
                         <label for="radMaybe">Maybe later</label>
                     </p>
                 </fieldset>
                 <!-- checkboxes -->
                 <fieldset class="fieldset">
-                    <legend>If yes, how are you interested in helping? (select all that apply)</legend>
+                    <legend>If yes, how are you interested in helping? (choose at least one)</legend>
                     <p>
                         <input type="checkbox" name="chkPlanting" id="chkPlanting" value="1">
                         <label for="chkPlanting">Volunteering to plant trees</label>
@@ -81,11 +222,11 @@ include 'top.php';
                     <legend>What is your favorite rainforest?</legend>
                     <p>
                         <select name="lstRainforest">
-                            <option value="amazon">Amazon Rainforest</option>
-                            <option value="congo">Congo Rainforest</option>
-                            <option value="southeast_asian">Southeast Asian Rainforest</option>
-                            <option value="kinabalu">Kinabalu National Forest</option>
-                            <option value="tongass">Tongass National Forest</option>
+                            <option value="Amazon Rainforest">Amazon Rainforest</option>
+                            <option value="Congo Rainforest">Congo Rainforest</option>
+                            <option value="Southeast Asian Rainforest">Southeast Asian Rainforest</option>
+                            <option value="Kinabalu National Forest">Kinabalu National Forest</option>
+                            <option value="Tongass National Forest">Tongass National Forest</option>
                         </select>
                     </p>
                 </fieldset>
