@@ -4,6 +4,22 @@ include 'top.php';
 $rainforestList = array("Amazon Rainforest", "Congo Rainforest", "Southeast Asian Rainforest", "Kinabalu National Forest", "Tongass National Forest");
 $status = false;
 
+$firstName = "";
+$lastName = "";
+$email = "";
+
+$help = "Yes";
+
+$planting = false;
+$donate = false;
+$meat = false;
+$farms = false; 
+$notInterested = false;
+
+$favRainforest = "Amazon Rainforest";
+
+$comments = "";
+
 // This function validates text data
 function verifyAlphaNum($testString) {
     // Check for letters, numbers and dash, period, space and single quote only.
@@ -159,21 +175,22 @@ function getData($field) {
         <section class="the-form">
             <h4>Rainforest Form</h4>
             <form action="#" method="POST">
-                <!-- text boxes -->
+          <!-- text boxes -->
                 <fieldset class="fieldset">
                     <legend>Contact Information</legend>
                     <p>
-                        <input type="text" name="txtFirstName" id="txtFirstName"
+                        <input type="text" name="txtFirstName" id="txtFirstName" value = "<?php print $firstName; ?>"
                             placeholder="Please enter your first name" required>
                         <label for="txtFirstName">First Name</label>
                     </p>
                     <p>
-                        <input type="text" name="txtLastName" id="txtLastName" placeholder="Please enter your last name"
+                        <input type="text" name="txtLastName" id="txtLastName" placeholder="Please enter your last name" 
+                            value = "<?php print $lastName; ?>" 
                             required>
                         <label for="txtLastName">Last Name</label>
                     </p>
                     <p>
-                        <input type="email" name="txtEmail" id="txtEmail" placeholder="Ex: johndoe@email.com" required>
+                        <input type="email" name="txtEmail" id="txtEmail" placeholder="Ex: johndoe@email.com" value = "<?php print $email; ?>" required>
                         <label for="txtEmail">Email</label>
                     </p>
                 </fieldset>
@@ -181,15 +198,26 @@ function getData($field) {
                 <fieldset class="fieldset">
                     <legend>Are you interested in helping save our forests?</legend>
                     <p>
-                        <input type="radio" name="radHelp" value="Yes" id="radYes">
+                        <input type="radio" name="radHelp" value="Yes" id="radYes" 
+                        <?php 
+                            if ($help == "Yes")
+                                print 'checked'; ?>>
                         <label for="radYes">Yes</label>
                     </p>
+
                     <p>
-                        <input type="radio" name="radHelp" value="No" id="radNo">
+                        <input type="radio" name="radHelp" value="No" id="radNo" 
+                        <?php 
+                            if ($help == "No")
+                                print 'checked'; ?>>
                         <label for="radNo">No</label>
                     </p>
+                    
                     <p>
-                        <input type="radio" name="radHelp" value="Maybe" id="radMaybe">
+                        <input type="radio" name="radHelp" value="Maybe" id="radMaybe" 
+                        <?php 
+                            if ($help == "Maybe")
+                                print 'checked'; ?>>
                         <label for="radMaybe">Maybe later</label>
                     </p>
                 </fieldset>
@@ -197,23 +225,38 @@ function getData($field) {
                 <fieldset class="fieldset">
                     <legend>If yes, how are you interested in helping? (choose at least one)</legend>
                     <p>
-                        <input type="checkbox" name="chkPlanting" id="chkPlanting" value="1">
+                        <input type="checkbox" name="chkPlanting" id="chkPlanting" value="1"
+                        <?php 
+                            if ($planting)
+                                print 'checked'; ?>>
                         <label for="chkPlanting">Volunteering to plant trees</label>
                     </p>
                     <p>
-                        <input type="checkbox" name="chkDonate" id="chkDonate" value="1">
+                        <input type="checkbox" name="chkDonate" id="chkDonate" value="1" 
+                        <?php 
+                            if ($donate)
+                                print 'checked'; ?>>
                         <label for="chkDonate">Donating to an organization</label>
                     </p>
                     <p>
-                        <input type="checkbox" name="chkMeat" id="chkMeat" value="1">
+                        <input type="checkbox" name="chkMeat" id="chkMeat" value="1" 
+                        <?php 
+                            if ($meat)
+                                print 'checked'; ?>>
                         <label for="chkMeat">Reducing meat intake</label>
                     </p>
                     <p>
-                        <input type="checkbox" name="chkFarms" id="chkFarms" value="1">
+                        <input type="checkbox" name="chkFarms" id="chkFarms" value="1" 
+                        <?php 
+                            if ($farms)
+                                print 'checked'; ?>>
                         <label for="chkFarms">Buying only from sustainable and forest-friendly sources</label>
                     </p>
                     <p>
-                        <input type="checkbox" name="chkNotInterested" id="chkNotInterested" value="1">
+                        <input type="checkbox" name="chkNotInterested" id="chkNotInterested" value="1" 
+                        <?php 
+                            if ($notInterested)
+                                print 'checked'; ?>>
                         <label for="chkNotInterested">I am not interested in helping</label>
                     </p>
                 </fieldset>
@@ -222,18 +265,37 @@ function getData($field) {
                     <legend>What is your favorite rainforest?</legend>
                     <p>
                         <select name="lstRainforest">
-                            <option value="Amazon Rainforest">Amazon Rainforest</option>
-                            <option value="Congo Rainforest">Congo Rainforest</option>
-                            <option value="Southeast Asian Rainforest">Southeast Asian Rainforest</option>
-                            <option value="Kinabalu National Forest">Kinabalu National Forest</option>
-                            <option value="Tongass National Forest">Tongass National Forest</option>
+                            <option value="Amazon Rainforest" 
+                            <?php 
+                            if ($favRainforest == "Amazon Rainforest")
+                                print 'selected'; ?>>Amazon Rainforest</option>
+
+                            <option value="Congo Rainforest"
+                            <?php 
+                            if ($favRainforest == "Congo Rainforest")
+                                print 'selected'; ?>>Congo Rainforest</option>
+
+                            <option value="Southeast Asian Rainforest"
+                            <?php 
+                            if ($favRainforest == "Southeast Asian Rainforest")
+                                print 'selected'; ?>>Southeast Asian Rainforest</option>
+
+                            <option value="Kinabalu National Forest"
+                            <?php 
+                            if ($favRainforest == "Kinabalu National Forest")
+                                print 'selected'; ?>>Kinabalu National Forest</option>
+
+                            <option value="Tongass National Forest" 
+                            <?php 
+                            if ($favRainforest == "Tongass National Forest")
+                                print 'selected'; ?>>Tongass National Forest</option>
                         </select>
                     </p>
                 </fieldset>
                 <fieldset class="fieldset">
                     <legend>Any comments?</legend>
                     <p>
-                        <textarea name="txtComments"></textarea>
+                        <textarea name="txtComments"><?php print $comments; ?></textarea>
                     </p>
                 </fieldset>
                 <fieldset class="fieldset">
