@@ -43,11 +43,20 @@ CREATE TABLE tblRainforestForm (
     fldMeat TINYINT(1),
     fldFarms TINYINT(1),
     fldNotInterested TINYINT(1),
-    fldFavRainforest VARCHAR(25),
+    fldFavRainforest VARCHAR(30),
     fldComments TEXT;
 )
 </pre>
-
+<h2>Insert Record</h2>
+<pre>
+INSERT INTO tblRainforestForm 
+    (fldFirstName, fldLastName, fldEmail, 
+    fldHelp, fldPlanting, fldDonate, 
+    fldMeat, fldFarms, fldNotInterested, fldFavRainforest, fldComments)
+VALUES 
+    ('Hannah', 'Sheridan', 'hgsherid@uvm.edu', 'Yes', '1', '1', '0', '1', '0', 
+    'Southeast Asian Rainforest', 'I love rainforests!')
+</pre>
 </main>
 <?php
 include 'footer.php';
