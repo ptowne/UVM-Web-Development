@@ -154,8 +154,33 @@ function getData($field) {
                     $status = false;
                 }
 
+                // save data 
+                if ($status) {
+                    try {
+                        $sql = "INSERT INTO tblRainforestForm 
+                        (fldFirstName, fldLastName, fldEmail, 
+                        fldHelp, fldPlanting, fldDonate, 
+                        fldMeat, fldFarms, fldNotInterested, 
+                        fldFavRainforest, fldComments) VALUES 
+                        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                        $statement = $pdo->prepare($sql);
+                        $data = array($firstName, $lastName, $email,
+                        $help, $planting, $donate, $meat,
+                        $farms, $notInterested, $favRainforest, $comments);
 
-            }
+                        if($statement->execute($data)) {
+                            print "<h3>Thank you!</h3><p>Your information has been submitted successfully.</p>";
+                        }
+                        else {
+                            print "<p>Your information was not successfully saved. Please contact hgsherid@uvm.edu to save your information.</p>";
+                        }
+                    }
+                    catch(PDOException $e) {
+                        print "<p>Couldn't insert data successfully. Please contact hgsherid@uvm.edu to save your data</p>";
+                    }
+                }
+
+            } // end form submit
 
         ?>  
 
