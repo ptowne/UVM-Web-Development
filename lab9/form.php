@@ -42,6 +42,8 @@ function getData($field) {
 ?>
     <main class = "main">
         <h1 class = "helpsave">Help Save Our Rainforests</h1>
+        <section class = "dbConnection">
+            <h3>Enter your information to help save our rainforests.</h3>
         <?php
             /* SANITIZE FORM */
             if ($_SERVER ["REQUEST_METHOD"] == "POST") {
@@ -183,6 +185,7 @@ function getData($field) {
             } // end form submit
 
         ?>  
+        </section>
 
 
         <section class="postarray">
