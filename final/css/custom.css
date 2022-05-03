@@ -606,6 +606,9 @@ input[type = "email"]{
     font-size: 1.2em;
 }
 
+.form .submitted {
+    font-weight: bold;
+}
 
 
 
