@@ -1,1 +1,576 @@
+:root {
+    --main-background-color: rgb(149, 188, 221);
+    --main-text-color: rgb(0,0,0);
+    --main-font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+    --nav-link-color: rgb(103, 170, 182);
+    --nav-color: rgb(65, 127, 139);
+    --nav-border-color: rgb(191, 241, 255);
+
+    --programs-background: rgba(255, 255, 255, 50%);
+
+
+    --h1-color: rgb(144, 189, 154);
+    --h1-shadow-color: rgb(103, 141, 112);
+
+    --h2-color: rgb(103, 141, 112);
+
+
+    --background-odd: rgb(255, 167, 245);
+    --background-even: rgb(255, 129, 240);
+    --table-light: rgb(255, 255, 255);
+    --table-dark: rgb(0, 0, 0);
+
+    --form-light: rgba(198, 133, 254, 0.4);
+    --form-dark: rgb(150, 86, 206);
+    --form-box: rgba(255, 255, 255, 50%);
+
+}
+html {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    font-family: var(--main-font-family);
+    margin: 1em;
+    padding: 1em;
+}
+
+figure{
+    text-align: center;
+    width: 100%;
+    border-radius: 1em;
+    border: thin solid var(--third-color);
+    background-color: var(--main-background-color);
+}
+figcaption{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    border-radius: 1em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header h1 {
+    text-align: center;
+    color: var(--h1-color);
+    text-shadow: 0 0 0.1em var(--h1-shadow-color);
+    font-size: 4em;
+}
+.header h2 {
+    text-align: center;
+    color: var(--h2-color);
+    font-size: 2em;
+    margin-top: -1em;
+}
+
+.nav {
+    background-color: var(--nav-color);
+    text-align: center;
+    padding: 3%;
+    font-size: 1.3em;
+}
+
+.nav a:link {
+    background-color: var(--nav-link-color);
+    margin: 2%;
+    padding: 2.5%;
+}
+
+.main h2 {
+    text-align: center;
+    border: 0.3em solid var(--h2-color);
+    background-color: var(--h1-color);
+    color: white;
+    text-shadow: 0 0 0.1em black;
+}
+
+/* INDEX */
+body {
+    grid-area: body;
+    display: grid;
+    grid-template-areas: "header header header"
+                        "nav nav nav"
+                        "main main main"
+                        "footer footer footer";
+}
+.header {
+    grid-area: header;
+}
+.footer {
+    grid-area: footer;
+}
+.nav {
+    grid-area: nav;
+
+}
+.main { 
+    grid-area: main;
+}
+
+input[type = "submit"] {
+    background: linear-gradient(var(--nav-link-color), var(--nav-border-color));
+    border: medium solid var(--nav-color);
+    font-size: 1.2em;
+    text-align: center;
+    height: 2em;
+    width: 8em;
+    font-weight: bold;
+}
+.intro form {
+    text-align: center;
+}
+.index .main {
+    display: grid;
+    grid-template-areas: "intro intro intro"
+                        "programsLinks programsLinks programsLinks"
+                        "backpackProgram backpackProgram backpackFigure" 
+                        "hikingProgram hikingProgram hikingFigure"
+                        "dayCampProgram dayCampProgram dayCampFigure"
+                        "insta insta insta";
+}
+.intro p {
+    font-size: 1.7em;
+}
+.backpackProgram p {
+    font-size: 1.6em;
+}
+.hikingProgram p {
+    font-size: 1.6em;
+}
+.dayCamp p {
+    font-size: 1.6em;
+}
+.index .intro {
+    grid-area: intro;
+    grid-column: 1 / 5;
+}
+.index .programsLinks {
+    grid-area: programsLinks;
+    grid-column: 1 / 5;
+}
+.index .insta {
+    grid-area: insta;
+    grid-row: 6;
+    grid-column: 1 / 5;
+}
+
+.insta .instaPhotos {
+    grid-column: 1 / 5;
+}
+
+.backpackProgram {
+    grid-area: backpackProgram;
+    grid-column: 1 / 3;
+    margin: 1em;
+}
+.backpackProgram h3 {
+    font-size: 1.5em;
+}
+
+.backpackFigure {
+    grid-area: backpackFigure;
+    grid-column: 3 / 5;
+    width: 90%;
+    margin-right: -3em;
+    margin-top: 3em;
+}
+
+.hikingProgram {
+    grid-area: hikingProgram;
+    grid-column: 3 / 5;
+    margin: 1em;
+
+}
+
+.hikingProgram h3 {
+    font-size: 1.5em;
+}
+
+.hikingFigure {
+    grid-area: hikingFigure;
+    grid-column: 1 / 3;
+    grid-row: 4;
+    margin-left: -1em;
+    width: 100%;
+}
+
+.dayCamp {
+    grid-area: dayCampProgram;
+    grid-column: 1 / 3;
+    grid-row: 5;
+    margin: 1em;
+
+}
+.dayCamp h3 {
+    font-size: 1.5em;
+}
+.dayCampFigure {
+    grid-area: dayCampFigure;
+    grid-column: 3 / 5;
+    grid-row: 5;
+    width: 90%;
+}
+
+/*ABOUT*/
+.about h3 {
+    font-size: 1.7em;
+}
+.about form {
+    text-align: center;
+}
+.aboutus p {
+    font-size: 1.6em;
+}
+.aboutus h2 {
+    font-size: 2em;
+}
+.about .tripLeaders {
+    display: grid;
+}
+.tripLeaders h2 {
+    grid-column: 1 / 5;
+}
+.tripLeaders p {
+    font-size: 1.5em;
+    margin: 1em;
+}
+.tripLeaders h3 {
+    text-align: center;
+}
+.leader1 {
+    grid-row: 2;
+    background: var(--programs-background);
+    margin: 1em;
+}
+.leader2 {
+    grid-row: 2;
+    background: var(--programs-background);
+    margin: 1em;
+}
+
+.leader3 {
+    grid-row: 3;
+    background: var(--programs-background);
+    margin: 1em;
+}
+.leader4 {
+    grid-row: 3;
+    background: var(--programs-background);
+    margin: 1em;
+}
+.leader1Figure {
+    margin-left: -0.1em;
+    border-radius: 0em;
+}
+.leader2Figure {
+    margin-left: -0.1em;
+    border-radius: 0em;
+}
+.leader3Figure {
+    margin-left: -0.1em;
+    border-radius: 0em;
+}
+.leader4Figure {
+    margin-left: -0.1em;
+    border-radius: 0em;
+}
+.leader1Photo {
+    border-radius: 0em;
+}
+.leader2Photo {
+    border-radius: 0em;
+}
+.leader3Photo {
+    border-radius: 0em;
+}
+.leader4Photo {
+    border-radius: 0em;
+}
+
+tr:nth-child(odd){
+    background-color: var(--background-odd);
+}
+tr:nth-child(even){
+    background-color: var(--background-even);
+}
+
+/*PROGRAMS*/
+.programs .backpacking {
+    display: grid;
+    grid-template-areas: "backpackingH2 backpackingH2 backpackingH2" 
+                        "backpackingInfo backpackingInfo backpackingInfo"
+                        "backpacking1 backpacking1 backpacking1"
+                        "backpacking2 backpacking2 backpacking2"
+                        "backpacking3 backpacking3 backpacking3";                 
+}
+
+.backpacking h2 {
+    grid-row: 1;
+    grid-column: 1 / 5;
+    grid-area: backpackingH2;
+}
+.backpacking p {
+    grid-row: 2;
+    grid-column: 1 / 5;
+    grid-area: backpackingInfo;
+    font-size: 1.7em;
+}
+
+.programs .hiking {
+    display: grid;
+    grid-template-areas: "hiking1 hiking1 hiking1" "hiking2 hiking2 hiking2" "hiking3 hiking3 hiking3";
+}
+
+.programs .backpacking1 {
+    grid-area: backpacking1;
+    border: medium solid var(--nav-color);
+    display: grid;
+    grid-template-areas: "mountEllen mountEllen mountEllen"
+                        "mountEllenFigure mountEllenFigure mountEllenInfo"
+                        "mountEllenFigure mountEllenFigure backpackingTable1";
+}
+.backpacking1 .mountEllen {
+    grid-area: mountEllen;
+    background: var(--nav-link-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+.backpacking1 .mountEllenInfo{
+    grid-area: mountEllenInfo;
+    font-size: 1.4em;
+    margin-right: 2em;
+}
+.backpacking1 .mountEllenFigure {
+    grid-area: mountEllenFigure;
+    width: 90%;
+    margin-top: 4em;
+}
+.backpacking1 .backpackingTable1 {
+    grid-area: backpackingTable1;
+    font-size: 1.2em;
+    margin: 1em;
+}
+.programs .backpacking2 {
+    grid-area: backpacking2;
+    border: medium solid var(--nav-link-color);
+    display: grid;
+    grid-template-areas: "mountMansfield mountMansfield mountMansfield"
+                        "mountMansfieldFigure mountMansfieldFigure mountMansfieldInfo"
+                        "mountMansfieldFigure mountMansfieldFigure backpackingTable2";
+}
+.backpacking2 .mountMansfield {
+    grid-area: mountMansfield;
+    background: var(--nav-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+.backpacking2 .mountMansfieldInfo {
+    grid-area: mountMansfieldInfo;
+    font-size: 1.4em;
+    margin-right: 2em;
+}
+.backpacking2 .mountMansfieldFigure {
+    grid-area: mountMansfieldFigure;
+    width: 90%;
+    margin-top: 6em;
+}
+.backpacking2 .backpackingTable2 {
+    grid-area: backpackingTable2;
+    font-size: 1.2em;
+    margin: 1em;
+}
+.programs .backpacking3 {
+    grid-area: backpacking3;
+    border: medium solid var(--nav-color);
+    display: grid;
+    grid-template-areas: "completeLongTrail completeLongTrail completeLongTrail" 
+                        "longTrailFigure longTrailFigure longTrailInfo"
+                        "longTrailFigure longTrailFigure backpackingTable3";
+}
+
+.backpacking3 .completeLongTrail {
+    grid-area: completeLongTrail;
+    background: var(--nav-link-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+.backpacking3 .longTrailFigure {
+    grid-area: longTrailFigure;
+    width: 90%;
+}
+.backpacking3 .longTrailInfo {
+    grid-area: longTrailInfo;
+    font-size: 1.4em;
+    margin-right: 2em;
+}
+
+.backpacking3 .backpackingTable3 {
+    grid-area: backpackingTable3;
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+.programs .hiking {
+    display: grid;
+    grid-template-areas: "hikingH2 hikingH2 hikingH2" 
+                        "hikingInfo hikingInfo hikingInfo"
+                        "hiking1 hiking1 hiking1"
+                        "hiking2 hiking2 hiking2"
+                        "hiking3 hiking3 hiking3";                 
+}
+
+.hiking .hikingH2 {
+    grid-area: hikingH2;
+}
+.hiking .hikingInfo {
+    grid-area: hikingInfo;
+    font-size: 1.7em;
+}
+.hiking .hiking1 {
+    grid-area: hiking1;
+    border: medium solid var(--nav-link-color);
+    display: grid;
+    grid-template-areas: "camelsHump camelsHump camelsHump"
+                        "camelsHumpFigure camelsHumpFigure camelsHumpInfo"
+                        "camelsHumpFigure camelsHumpFigure hikingTable1";
+}
+.hiking1 .camelsHump {
+    grid-area: camelsHump;
+    background: var(--nav-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+.hiking1 .camelsHumpInfo {
+    grid-area: camelsHumpInfo;
+    font-size: 1.4em;
+    margin-right: 2em;
+}
+.hiking1 .camelsHumpFigure {
+    grid-area: camelsHumpFigure;
+    width: 90%;
+}
+.hiking1 .hikingTable1 {
+    grid-area: hikingTable1;
+    font-size: 1.2em;
+    margin: 1em;
+}
+.hiking .hiking2 {
+    grid-area: hiking2;
+    border: medium solid var(--nav-color);
+    display: grid;
+    grid-template-areas: "jayPeak jayPeak jayPeak"
+                        "jayPeakFigure jayPeakFigure jayPeakInfo"
+                        "jayPeakFigure jayPeakFigure hikingTable2";
+
+}
+.hiking2 .jayPeak {
+    grid-area: jayPeak;
+    background: var(--nav-link-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+.hiking2 .jayPeakInfo {
+    grid-area: jayPeakInfo;
+    font-size: 1.4em;
+    margin-right: 2em;
+}
+.hiking2 .jayPeakFigure {
+    grid-area: jayPeakFigure;
+    width: 90%;
+}
+.hiking2 .hikingTable2 {
+    grid-area: hikingTable2;
+    font-size: 1.2em;
+    margin: 1em;
+}
+.hiking .hiking3 {
+    grid-area: hiking3;
+    border: medium solid var(--nav-link-color);
+    display: grid;
+    grid-template-areas: "mountOlga mountOlga mountOlga"
+                        "mountOlgaFigure mountOlgaFigure mountOlgaInfo"
+                        "mountOlgaFigure mountOlgaFigure hikingTable3";
+}
+.hiking3 .mountOlga {
+    grid-area: mountOlga;
+    background: var(--nav-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+.hiking3 .mountOlgaFigure {
+    grid-area: mountOlgaFigure;
+    width: 90%;
+}
+.hiking3 .mountOlgaInfo {
+    grid-area: mountOlgaInfo;
+    font-size: 1.4em;
+    margin-right: 2em;
+}
+.hiking3 .hikingTable3 {
+    grid-area: hikingTable3;
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+.programs .dayCampProgram {
+    display: grid;
+    grid-template-areas: "dayCampH2 dayCampH2 dayCampH2"
+                        "dayCampProgramFigure dayCampProgramFigure dayCampInfo"
+                        "dayCampProgramFigure dayCampProgramFigure dayCampTable";
+}
+.dayCampProgram .dayCampH2{
+    grid-area: dayCampH2;
+}
+.dayCampProgram .dayCampProgramFigure {
+    grid-area: dayCampProgramFigure;
+    width: 90%;
+}
+.dayCampProgram .dayCampInfo {
+    grid-area: dayCampInfo;
+    font-size: 1.4em;
+}
+.dayCampProgram .dayCampTable {
+    grid-area: dayCampTable;
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+/*FORM*/
+.form legend {
+    font-weight: bold;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    text-align: center;
+    background: var(--form-dark);
+}
+.form .fieldset {
+    border: .2em solid var(--form-dark);
+    padding: 1%;
+    margin: 1%;
+}
+input[type = "text"]{
+    background-color: var(--form-box);
+    border: .2em solid var(--form-dark);
+}
+input[type = "email"]{
+    background-color: var(--form-box);
+    border: .2em solid var(--form-dark);
+}
+.the-form {
+    background: var(--form-light);
+    border: .2em solid var(--form-dark);
+}
+.the-form h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
 
