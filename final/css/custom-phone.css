@@ -1,0 +1,37 @@
+.backpackProgram {
+    grid-row: 3;
+    grid-column: 1 / 5;
+}
+.backpackFigure {
+    grid-row: 4;
+    grid-column: 1 / 5;
+}
+.hikingFigure {
+    grid-row: 6;
+    grid-column: 1 / 5;
+}
+.hikingProgram {
+    grid-row: 5;
+    grid-column: 1 / 5;
+}
+.dayCamp {
+    grid-row: 7;
+    grid-column: 1 / 5;
+}
+.dayCampFigure {
+    grid-row: 8;
+    grid-column: 1 / 5;
+}
+.index .insta {
+    grid-row: 9;
+}
+.programs .main figure {
+    margin-left: 1em;
+}
+
+.nav {
+    font-size: 0.87em;
+}
+.nav a:link {
+    margin: 1%;
+}
