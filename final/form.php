@@ -183,7 +183,7 @@ function getData($field) {
                     $phone, $age, $backpacking, $hiking, $dayCamp, $program, $date);
 
                     if($statement->execute($data)) {
-                        print "<h3>Thank you!</h3><p>Your information has been submitted successfully.</p>";
+                        print "<h3>Thank you!</h3><p class = 'submitted'>Your information has been submitted successfully.</p>";
                         $to = $email;
                         $from = 'The Long Trail Hiking Camp <hgsherid@uvm.edu>';
                         $subject = 'Thank You!';
@@ -195,7 +195,7 @@ function getData($field) {
                         $headers .= "From: " . $from . "\r\n";
                         $mailSent = mail($to, $subject, $mailMessage, $headers);
                         if ($mailSent) {
-                            print "<p>Check your email for confirmation of your sign up!</p>";
+                            print "<p class = 'submitted'>Check your email for confirmation of your sign up!</p>";
                             print $mailMessage;
                         }
                     }
