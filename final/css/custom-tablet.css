@@ -1,0 +1,96 @@
+/*.nav a:link{
+    padding: 1em;
+}
+.nav {
+    padding: 1em;
+}*/
+.instaPhotos {
+    margin: 1em;
+}
+
+.leader1 {
+    grid-row: 2;
+}
+.leader2 {
+    grid-row: 3;
+}
+.leader3 {
+    grid-row: 4;
+}
+.leader4 {
+    grid-row: 5;
+}
+
+.programs .backpacking1 {
+    grid-template-areas: "mountEllen mountEllen mountEllen"
+                        "mountEllenFigure mountEllenFigure mountEllenFigure"
+                        "mountEllenInfo mountEllenInfo mountEllenInfo"
+                        "backpackingTable1 backpackingTable1 backpackingTable1";
+}
+.backpacking1 .mountEllenFigure {
+    margin-top: 0em;
+}
+.mountEllenInfo {
+    margin: 1em;
+}
+.programs .backpacking2 {
+    grid-template-areas: "mountMansfield mountMansfield mountMansfield"
+                        "mountMansfieldFigure mountMansfieldFigure mountMansfieldFigure"
+                        "mountMansfieldInfo mountMansfieldInfo mountMansfieldInfo"
+                        "backpackingTable2 backpackingTable2 backpackingTable2";
+}
+.backpacking2 .mountMansfieldFigure {
+    margin-top: 0em;
+}
+.mountMansfieldInfo {
+    margin: 1em;
+}
+.programs .backpacking3 {
+    grid-template-areas: "completeLongTrail completeLongTrail completeLongTrail" 
+                        "longTrailFigure longTrailFigure longTrailFigure"
+                        "longTrailInfo longTrailInfo longTrailInfo"
+                        "backpackingTable3 backpackingTable3 backpackingTable3";
+}
+
+.longTrailInfo {
+    margin: 1em;
+}
+.hiking .hiking1 {
+    grid-template-areas: "camelsHump camelsHump camelsHump"
+                        "camelsHumpFigure camelsHumpFigure camelsHumpFigure"
+                        "camelsHumpInfo camelsHumpInfo camelsHumpInfo"
+                        "hikingTable1 hikingTable1 hikingTable1";
+}
+
+.camelsHumpInfo {
+    margin: 1em;
+}
+.hiking .hiking2 {
+    grid-template-areas: "jayPeak jayPeak jayPeak"
+                        "jayPeakFigure jayPeakFigure jayPeakFigure"
+                        "jayPeakInfo jayPeakInfo jayPeakInfo"
+                        "hikingTable2 hikingTable2 hikingTable2";
+
+}
+
+.jayPeakInfo {
+    margin: 1em;
+}
+.hiking .hiking3 {
+    grid-template-areas: "mountOlga mountOlga mountOlga"
+                        "mountOlgaFigure mountOlgaFigure mountOlgaFigure"
+                        "mountOlgaInfo mountOlgaInfo mountOlgaInfo"
+                        "hikingTable3 hikingTable3 hikingTable3";
+}
+
+.mountOlgaInfo {
+    margin: 1em;
+}
+.programs .dayCampProgram {
+    display: grid;
+    grid-template-areas: "dayCampH2 dayCampH2 dayCampH2"
+                        "dayCampProgramFigure dayCampProgramFigure dayCampProgramFigure"
+                        "dayCampInfo dayCampInfo dayCampInfo"
+                        "dayCampTable dayCampTable dayCampTable";
+}
+
