@@ -52,7 +52,6 @@ function getData($field) {
 }
 ?>
     <main class = "main">
-        <h1 class = "signUp">Sign Up for the Camp!</h1>
         <section class = "dbConnection">
             <h2>Enter your information to sign up for The Long Trail Nature Camp</h2>
     <?php
@@ -185,6 +184,20 @@ function getData($field) {
 
                     if($statement->execute($data)) {
                         print "<h3>Thank you!</h3><p>Your information has been submitted successfully.</p>";
+                        $to = $email;
+                        $from = 'The Long Trail Hiking Camp <hgsherid@uvm.edu>';
+                        $subject = 'Thank You!';
+                        $mailMessage = "<p>Hello, ";
+                        $mailMessage .= $firstName;
+                        $mailMessage .= "</p><p>Thank you for signing up for the Long Trail Nature Camp! We look forward to seeing you :)</p><p>Best,<p></p>The Long Trail Hiking Camp</p>";
+                        $headers = "MIME-Version: 1.0\r\n";
+                        $headers .= "Content-type: text/html; charset = utf-8\r\n";
+                        $headers .= "From: " . $from . "\r\n";
+                        $mailSent = mail($to, $subject, $mailMessage, $headers);
+                        if ($mailSent) {
+                            print "<p>Check your email for confirmation of your sign up!</p>";
+                            print $mailMessage;
+                        }
                     }
                     else {
                         print "<p>Your information was not successfully saved. Please contact hgsherid@uvm.edu to save your information.</p>";
@@ -200,14 +213,6 @@ function getData($field) {
     ?> 
         </section>
 
-        <section class="postarray">
-            <h3>Post Array</h3>
-            <?php
-                print '<p>Post Array:</p><pre>';
-                print_r($_POST);
-                print '</pre>'; 
-            ?>
-        </section>
         <section class = "the-form">
             <h3>Sign Up Form</h3>
             <form action = "#" method = "POST">
