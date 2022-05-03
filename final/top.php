@@ -7,7 +7,7 @@ $pathParts = pathinfo($phpSelf);
 <html lang = "en">
 
     <head>
-        <meta class = "UTF-8">
+        <meta charset = "UTF-8">
         <title>The Long Trail Summer Camp</title>
         <meta name = "author" content = "Hannah Sheridan">
         <meta name = "description" content = "Explore the wonders of Vermont with this all-year-round camp for kids and adults alike!">
@@ -16,7 +16,7 @@ $pathParts = pathinfo($phpSelf);
         <link rel="stylesheet" href="css/custom.css?version=<?php print time();?>" type="text/css">
         <link rel="stylesheet" media = "(max-width: 800px)" href="css/custom-tablet.css?version=<?php print time();?>" type="text/css">
         <link rel="stylesheet" media = "(max-width: 600px)" href="css/custom-phone.css?version=<?php print time();?>" type="text/css">
-    <head>
+    </head>
 
 
 <?php

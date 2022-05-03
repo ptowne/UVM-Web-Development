@@ -4,13 +4,14 @@ include 'top.php';
     <main class = "main">
         <section class = "backpacking" id = "backpacking">
             <h2 class = "backpackingH2">Backpacking Programs</h2>
-            <p class = "backpackingInfo">Backpacking at The Long Trail Nature Camp is easy and fun! Trips go out all summer at different areas to allow 
+            <p class = "backpackingInfo">Backpacking at The Long Trail Hiking Camp is easy and fun! Trips go out all summer at different areas to allow 
                 our campers opportunities to peak many mountains on The Long Trail! Our backpacking trips go out this Summer 2022 
             in the months of June, July, and August.</p>
             <section class = "backpacking1">
                 <h3 class = "mountEllen">Mount Ellen</h3>
                 <figure class = "mountEllenFigure">
                     <img src = "images/mountEllen.jpg" alt = "Mount Ellen" class = "mountEllenPhoto">
+                    <figcaption>Mount Ellen | Source: <cite><a href = "https://en.wikipedia.org/wiki/Mount_Ellen_(Vermont)" target = "_blank">Wikipedia</a></cite></figcaption>
                 </figure>
                 <p class = "mountEllenInfo">The Jerusalem Trail near Starksboro, VT explores Mount Ellen in an 8.5 mile out-and-back hike. On this trail, our 
                     campers will reach a peak elevation of 2,500 feet and will be able to summit Mount Ellen! The Jerusalem Trail is popular,
@@ -45,6 +46,7 @@ foreach ($records as $record) {
                 <h3 class = "mountMansfield">Mount Mansfield</h3>
                 <figure class = "mountMansfieldFigure">
                     <img src = "images/mountMansfield.jpg" alt = "Mount Mansfield" class = "mountMansfieldPhoto">
+                    <figcaption>Mount Mansfield | Source: <cite><a href = "https://en.wikipedia.org/wiki/Mount_Mansfield" target = "_blank">Wikipedia</a></cite></figcaption>
                 </figure>
                 <p class = "mountMansfieldInfo">An opportunity to explore the tallest mountain in Vermont awaits! Mount Mansfield reaches an elevation of 4,395 feet, and contains the Haselton Loop, a challenging trail that spans around 7 miles. Our groups start at Barnes Camp and cross the Smuggler's Notch Boardwalk, leading into 
                     The Long Trail. The loop trail has many camp sites for our campers to set up their tents, as well as lodges where we will stop for quick meals along the way! Be careful not to trample the beautiful and striking plants along the way! Our campers will meet at our facility at Barnes Camp 
@@ -78,6 +80,8 @@ foreach ($records as $record) {
                 <h3 class = "completeLongTrail">The Complete Long Trail</h3>
                 <figure class = "longTrailFigure">
                     <img src = "images/longTrail.jpg" alt = "The Long Trail" class = "longTrailPhoto">
+                    <figcaption>The Long Trail | Source: <cite><a href = "https://sectionhiker.com/how-to-hike-vermonts-long-trail/" target = "_blank">Section Hiker</a></cite></figcaption>
+                    
                 </figure>
                 <p class = "longTrailInfo">The Long Trail runs 272 miles with an elevation gain of 65,370 ft. The trail follows the Green Mountains from the Massachusetts-Vermont border line to Canada. The trail 
                     is of varied terrain and difficulty, so hikers can never get bored! The trail also offers amazing views and allows experienced hikers to explore many mountains on the Northern East Coast. 
@@ -112,12 +116,12 @@ foreach ($records as $record) {
 
         <section class = "hiking" id = "hiking">
             <h2 class = "hikingH2">Hiking Programs</h2>
-            <p class = "hikingInfo">Day hikes with The Long Trail Nature Camp go out most days of the week in the summer from June 6th, 2022 - August 1st, 2022.</p>
+            <p class = "hikingInfo">Day hikes with The Long Trail Hiking Camp go out most days of the week in the summer from June 6th, 2022 - August 1st, 2022.</p>
             <section class = "hiking1">
                 <h3 class = "camelsHump">Camel's Hump Trail</h3>
                 <figure class = "camelsHumpFigure">
                     <img src = "images/camelsHump.jpg" alt = "Camel's Hump" class = "camelsHumpPhoto">
-                    <figcaption>Camel's Hump Day Hike</figcaption>
+                    <figcaption>Camel's Hump | Source: <cite><a href = "https://en.wikipedia.org/wiki/Camel%27s_Hump" target = "_blank">Wikipedia</a></cite></figcaption>
                 </figure>
                 <p class = "camelsHumpInfo">The Camel's Hump trail spans 6 miles near Waterbury, Vermont. The popular trail takes around 4 hours to complete, and is beautiful no matter what time of year you hike!
                     Every weekend, we have multiple groups going out on the magnificent trail at three separate times of day for both age groups. Look out for the magnificent wildlife! </p>
@@ -171,7 +175,7 @@ foreach ($records as $record) {
                 <h3 class = "jayPeak">Jay Peak Trail</h3>
                 <figure class = "jayPeakFigure">
                     <img src = "images/jayPeak.jpg" alt = "Jay Peak" class = "jayPeakPhoto">
-                    <figcaption>Jay Peak Day Hike</figcaption>
+                    <figcaption>Jay Peak | Source: <cite><a href = "https://en.wikipedia.org/wiki/Jay_Peak_(Vermont)" target = "_blank">Wikipedia</a></cite></figcaption>
                 </figure>
                 <p class = "jayPeakInfo">This trail is 1.7 miles long, but is still a rigorous, challenging, yet beautiful hike. This hike allows us and our campers to summit Jay Peak in one day! 
                     At the top, you can see a magnificent view of Northern Vermont and Quebec.</p>
@@ -224,7 +228,7 @@ foreach ($records as $record) {
                 <h3 class = "mountOlga">Mount Olga</h3>
                 <figure class = "mountOlgaFigure">
                     <img src = "images/mountOlga.jpg" alt = "Mount Olga" class = "mountOlgaPhoto">
-                    <figcaption>Mount Olga Day Hike</figcaption>
+                    <figcaption>Mount Olga | Source: <cite><a href = "https://www.eastcoasthiker.com/trails/mountolga/" target = "_blank">East Coast Hiker</a></cite></figcaption>
                 </figure>
                 <p class = "mountOlgaInfo">This 2 mile hike explores the small Mount Olga and takes you to the summit where you will see beautiful 
                     views of Southern Vermont, New Hampshire, and Massachusetts. Though challenging, the trail only takes about
@@ -276,11 +280,11 @@ foreach ($records as $record) {
                 </table>     
             </section>
         </section>
-        <section class = "dayCampProgram">
+        <section class = "dayCampProgram" id = "dayCampProgram">
             <h2 class = "dayCampH2">Day Camp for Kids</h2>
             <figure class = "dayCampProgramFigure">
                 <img src = "images/dayCampProgram.jpg" alt = "Day Camp for Kids" class = "dayCampProgramPhoto">
-                <figcaption>Children's Day Camp</figcaption>
+                <figcaption>Children's Day Camp | Source: <cite><a href = "https://www.thegrammarschool.org/summer" target = "_blank">The Grammar School</a></cite></figcaption>
             </figure>
             <p class = "dayCampInfo">We also offer a children's nature camp that teaches campers about the outdoors and prepares them for hiking. At the day camp, our trip leaders teach
                 important backpacking concepts like Leave-No-Trace, setting up tents, and even hanging bear bags! We want to prepare kids to become 
