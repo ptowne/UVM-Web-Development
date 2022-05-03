@@ -9,8 +9,8 @@
     --programs-background: rgba(255, 255, 255, 50%);
 
 
-    --h1-color: rgb(144, 189, 154);
-    --h1-shadow-color: rgb(103, 141, 112);
+    --h1-color: rgb(120, 162, 129);
+    --h1-shadow-color: rgb(86, 118, 93);
 
     --h2-color: rgb(103, 141, 112);
 
@@ -54,7 +54,6 @@ img{
 .header h1 {
     text-align: center;
     color: var(--h1-color);
-    text-shadow: 0 0 0.1em var(--h1-shadow-color);
     font-size: 4em;
 }
 .header h2 {
@@ -153,10 +152,46 @@ input[type = "submit"] {
     grid-area: insta;
     grid-row: 6;
     grid-column: 1 / 5;
-}
+    display: grid;
+    grid-template-areas: "instaHeader instaHeader instaHeader"
+                        "insta1 insta2 insta3"
+                        "insta4 insta5 insta6"
+                        "btnInsta btnInsta btnInsta";
 
-.insta .instaPhotos {
-    grid-column: 1 / 5;
+}
+.insta img {
+    border-radius: 0em;
+}
+.insta .instaHeader {
+    grid-area: instaHeader;
+}
+.insta .insta1 {
+    grid-area: insta1;
+    margin: 0em;
+}
+.insta .insta2 {
+    grid-area: insta2;
+    margin: 0em;
+}
+.insta .insta3 {
+    grid-area: insta3;
+    margin: 0em;
+}
+.insta .insta4 {
+    grid-area: insta4;
+    margin: 0em;
+}
+.insta .insta5 {
+    grid-area: insta5;
+    margin: 0em;
+}
+.insta .insta6 {
+    grid-area: insta6;
+    margin: 0em;
+}
+.insta form {
+    text-align: center;
+    grid-area: btnInsta;
 }
 
 .backpackProgram {
@@ -566,6 +601,9 @@ input[type = "email"]{
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5em;
+}
+.the-form label {
+    font-size: 1.2em;
 }
 
 
