@@ -80,6 +80,45 @@
         <h2>Hannah Sheridan - Site map</h2>
         <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
         <p><a href ="ADMIN/table-viewer.php?getDatabase=">Database Viewer</p></a>
+        
+        <!-- Section: Final -->
+        <section class = "grid-layout">
+            <h2 class = "header">Final Project</h2>
+        <!-- Public Files -->
+            <section class = "public-files">
+                <h3>Public Files</h3>
+                <p><a href = "final/index.php">array.php</a></p>
+                <p><a href = "final/about.php">detail.php</a></p>
+                <p><a href = "final/programs.php">form.php</a></p>
+                <p><a href = "final/form.php">index.php</a></p>
+                <p></p>
+            </section>
+        <!-- Supporting Files -->
+            <section class = "supporting-files">
+                <h3>Supporting Files</h3>
+                <p><a href = "final/css/custom.css">custom.css</a></p>
+                <p><a href = "final/css/custom-phone.css">custom-phone.css</a></p>
+                <p><a href = "final/css/custom-tablet.css">custom-tablet.css</a></p>
+
+                <p><a href = "final/sql.php">DB SQL Statements</a></p>
+                <p><a href = "final/images/records.jpg>">DB Records</a></p>
+                
+                <p><a href = "final/footer.php">footer.php</a></p>
+                <p><a href = "final/header.php">header.php</a></p>
+                <p><a href = "final/nav.php">nav.php</a></p>
+                <p><a href = "final/top.php">top.php</a></p>
+
+                <p><a href = "final/images/wireframe.png">wireframe desktop</a></p>
+                <p><a href = "final/images/phone-wireframe.png">wireframe phone</a></p>
+                <p><a href = "final/images/wireframe-tablet.png">wireframe tablet</a></p>
+            </section>
+        <!-- Notes to grader -->
+            <section class = "grader-notes">
+                <h3>Notes to Grader</h3>
+                <p></p>
+            </section>
+        </section>
+        
         <!-- Section: Lab 9 -->
         <section class = "grid-layout">
             <h2 class = "header">Lab Nine - Saving forms data.</h2>
